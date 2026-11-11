@@ -1,0 +1,12 @@
+backend/.venv/
+**/__pycache__/
+.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+# saved runs stay local, except the demo run that ships with the app
+workspace/runs/*
+!workspace/runs/c7a7bdf83de2.json
+# thesis, report and slide PDFs are not part of the app
+Report/
+Docs/
+.claude/

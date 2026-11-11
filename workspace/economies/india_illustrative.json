@@ -1,0 +1,887 @@
+{
+  "id": "india_illustrative",
+  "name": "India (illustrative, 12 sets)",
+  "description": "A 12-set starter economy for India. Values are illustrative orders of magnitude; replace them with survey-based numbers and check the calibration panel. Only household consumption is modelled, so simulated GST will sit below total GST collections.",
+  "currency": "₹",
+  "year": "2025-26",
+  "sets": [
+    {
+      "id": "rural_landless",
+      "name": "Rural landless casual labour",
+      "description": "",
+      "region": "rural",
+      "population": 250000000.0,
+      "tags": [
+        "bpl"
+      ],
+      "demographics": {
+        "household_size": 4.6,
+        "earners_per_household": 1.8
+      },
+      "income": {
+        "kind": "lognormal",
+        "median": 130000.0,
+        "sigma": 0.45,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "income_sources": {
+        "wage": 0.75,
+        "self_employment": 0.1,
+        "agriculture": 0.15,
+        "capital": 0.0
+      },
+      "formal_share": 0.02,
+      "wealth": {
+        "kind": "lognormal",
+        "median": 150000.0,
+        "sigma": 1.0,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "inherited_wealth_share": 0.6,
+      "income_wealth_correlation": 0.6,
+      "consumption": {
+        "apc_at_median": 0.97,
+        "apc_income_elasticity": -0.15,
+        "apc_dispersion": 0.08,
+        "basket": {
+          "exempt": 0.45,
+          "reduced": 0.4,
+          "standard": 0.13,
+          "demerit": 0.02
+        },
+        "informal_purchase_share": 0.6
+      },
+      "behavior": {
+        "eti": 0.1,
+        "mobility": 0.05,
+        "informality_penalty": 0.15,
+        "evadable_share": 0.8,
+        "risk_aversion": 2.0,
+        "tax_morale": 0.3,
+        "avoidance_access": 0.0
+      },
+      "information": {
+        "literacy": 0.55,
+        "awareness": {
+          "rebate": 0.1,
+          "deductions": 0.05,
+          "transfers": 0.55
+        },
+        "rate_perception": "average",
+        "perceived_audit_prob": 0.01,
+        "compliance_cost": 1500.0,
+        "peer_learning": 0.15
+      },
+      "sources": [
+        "Illustrative values for demonstration; not yet calibrated"
+      ]
+    },
+    {
+      "id": "rural_marginal_farmers",
+      "name": "Rural marginal & small farmers",
+      "description": "",
+      "region": "rural",
+      "population": 280000000.0,
+      "tags": [
+        "farmer",
+        "bpl"
+      ],
+      "demographics": {
+        "household_size": 4.8,
+        "earners_per_household": 1.9
+      },
+      "income": {
+        "kind": "lognormal",
+        "median": 160000.0,
+        "sigma": 0.5,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "income_sources": {
+        "wage": 0.25,
+        "self_employment": 0.1,
+        "agriculture": 0.62,
+        "capital": 0.03
+      },
+      "formal_share": 0.03,
+      "wealth": {
+        "kind": "lognormal",
+        "median": 600000.0,
+        "sigma": 1.0,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "inherited_wealth_share": 0.85,
+      "income_wealth_correlation": 0.6,
+      "consumption": {
+        "apc_at_median": 0.93,
+        "apc_income_elasticity": -0.15,
+        "apc_dispersion": 0.08,
+        "basket": {
+          "exempt": 0.45,
+          "reduced": 0.38,
+          "standard": 0.15,
+          "demerit": 0.02
+        },
+        "informal_purchase_share": 0.55
+      },
+      "behavior": {
+        "eti": 0.1,
+        "mobility": 0.03,
+        "informality_penalty": 0.15,
+        "evadable_share": 0.8,
+        "risk_aversion": 2.0,
+        "tax_morale": 0.3,
+        "avoidance_access": 0.0
+      },
+      "information": {
+        "literacy": 0.6,
+        "awareness": {
+          "rebate": 0.1,
+          "deductions": 0.05,
+          "transfers": 0.7
+        },
+        "rate_perception": "average",
+        "perceived_audit_prob": 0.01,
+        "compliance_cost": 1500.0,
+        "peer_learning": 0.15
+      },
+      "sources": [
+        "Illustrative values for demonstration; not yet calibrated"
+      ]
+    },
+    {
+      "id": "rural_large_farmers",
+      "name": "Rural large farmers",
+      "description": "",
+      "region": "rural",
+      "population": 35000000.0,
+      "tags": [
+        "farmer"
+      ],
+      "demographics": {
+        "household_size": 5.2,
+        "earners_per_household": 2.0
+      },
+      "income": {
+        "kind": "lognormal_pareto",
+        "median": 600000.0,
+        "sigma": 0.7,
+        "pareto_alpha": 2.2,
+        "tail_start_quantile": 0.9
+      },
+      "income_sources": {
+        "wage": 0.05,
+        "self_employment": 0.1,
+        "agriculture": 0.75,
+        "capital": 0.1
+      },
+      "formal_share": 0.15,
+      "wealth": {
+        "kind": "lognormal",
+        "median": 6000000.0,
+        "sigma": 1.1,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "inherited_wealth_share": 0.9,
+      "income_wealth_correlation": 0.6,
+      "consumption": {
+        "apc_at_median": 0.7,
+        "apc_income_elasticity": -0.15,
+        "apc_dispersion": 0.08,
+        "basket": {
+          "exempt": 0.35,
+          "reduced": 0.35,
+          "standard": 0.25,
+          "demerit": 0.05
+        },
+        "informal_purchase_share": 0.4
+      },
+      "behavior": {
+        "eti": 0.15,
+        "mobility": 0.1,
+        "informality_penalty": 0.15,
+        "evadable_share": 0.6,
+        "risk_aversion": 2.0,
+        "tax_morale": 0.2,
+        "avoidance_access": 0.2
+      },
+      "information": {
+        "literacy": 0.75,
+        "awareness": {
+          "rebate": 0.4,
+          "deductions": 0.3,
+          "transfers": 0.85
+        },
+        "rate_perception": "exact",
+        "perceived_audit_prob": null,
+        "compliance_cost": 1000.0,
+        "peer_learning": 0.15
+      },
+      "sources": [
+        "Illustrative values for demonstration; not yet calibrated"
+      ]
+    },
+    {
+      "id": "rural_nonfarm_self",
+      "name": "Rural non-farm self-employed",
+      "description": "",
+      "region": "rural",
+      "population": 170000000.0,
+      "tags": [
+        "bpl"
+      ],
+      "demographics": {
+        "household_size": 4.6,
+        "earners_per_household": 1.6
+      },
+      "income": {
+        "kind": "lognormal",
+        "median": 220000.00000000003,
+        "sigma": 0.6,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "income_sources": {
+        "wage": 0.25,
+        "self_employment": 0.6,
+        "agriculture": 0.1,
+        "capital": 0.05
+      },
+      "formal_share": 0.05,
+      "wealth": {
+        "kind": "lognormal",
+        "median": 400000.0,
+        "sigma": 1.1,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "inherited_wealth_share": 0.4,
+      "income_wealth_correlation": 0.6,
+      "consumption": {
+        "apc_at_median": 0.9,
+        "apc_income_elasticity": -0.15,
+        "apc_dispersion": 0.08,
+        "basket": {
+          "exempt": 0.4,
+          "reduced": 0.38,
+          "standard": 0.19,
+          "demerit": 0.03
+        },
+        "informal_purchase_share": 0.55
+      },
+      "behavior": {
+        "eti": 0.2,
+        "mobility": 0.1,
+        "informality_penalty": 0.15,
+        "evadable_share": 0.8,
+        "risk_aversion": 2.0,
+        "tax_morale": 0.25,
+        "avoidance_access": 0.0
+      },
+      "information": {
+        "literacy": 0.65,
+        "awareness": {
+          "rebate": 0.15,
+          "deductions": 0.1,
+          "transfers": 0.5
+        },
+        "rate_perception": "average",
+        "perceived_audit_prob": 0.01,
+        "compliance_cost": 1500.0,
+        "peer_learning": 0.15
+      },
+      "sources": [
+        "Illustrative values for demonstration; not yet calibrated"
+      ]
+    },
+    {
+      "id": "rural_salaried",
+      "name": "Rural salaried workers",
+      "description": "",
+      "region": "rural",
+      "population": 80000000.0,
+      "tags": [],
+      "demographics": {
+        "household_size": 4.3,
+        "earners_per_household": 1.4
+      },
+      "income": {
+        "kind": "lognormal",
+        "median": 420000.0,
+        "sigma": 0.5,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "income_sources": {
+        "wage": 0.8,
+        "self_employment": 0.05,
+        "agriculture": 0.1,
+        "capital": 0.05
+      },
+      "formal_share": 0.55,
+      "wealth": {
+        "kind": "lognormal",
+        "median": 800000.0,
+        "sigma": 1.0,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "inherited_wealth_share": 0.4,
+      "income_wealth_correlation": 0.6,
+      "consumption": {
+        "apc_at_median": 0.82,
+        "apc_income_elasticity": -0.15,
+        "apc_dispersion": 0.08,
+        "basket": {
+          "exempt": 0.35,
+          "reduced": 0.38,
+          "standard": 0.24,
+          "demerit": 0.03
+        },
+        "informal_purchase_share": 0.4
+      },
+      "behavior": {
+        "eti": 0.15,
+        "mobility": 0.05,
+        "informality_penalty": 0.15,
+        "evadable_share": 0.15,
+        "risk_aversion": 2.0,
+        "tax_morale": 0.4,
+        "avoidance_access": 0.0
+      },
+      "information": {
+        "literacy": 0.85,
+        "awareness": {
+          "rebate": 0.55,
+          "deductions": 0.35,
+          "transfers": 0.5
+        },
+        "rate_perception": "exact",
+        "perceived_audit_prob": null,
+        "compliance_cost": 1000.0,
+        "peer_learning": 0.15
+      },
+      "sources": [
+        "Illustrative values for demonstration; not yet calibrated"
+      ]
+    },
+    {
+      "id": "semi_urban_informal",
+      "name": "Semi-urban informal workers",
+      "description": "",
+      "region": "semi_urban",
+      "population": 160000000.0,
+      "tags": [
+        "bpl"
+      ],
+      "demographics": {
+        "household_size": 4.4,
+        "earners_per_household": 1.6
+      },
+      "income": {
+        "kind": "lognormal",
+        "median": 240000.0,
+        "sigma": 0.5,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "income_sources": {
+        "wage": 0.7,
+        "self_employment": 0.25,
+        "agriculture": 0.0,
+        "capital": 0.05
+      },
+      "formal_share": 0.08,
+      "wealth": {
+        "kind": "lognormal",
+        "median": 300000.0,
+        "sigma": 1.1,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "inherited_wealth_share": 0.4,
+      "income_wealth_correlation": 0.6,
+      "consumption": {
+        "apc_at_median": 0.93,
+        "apc_income_elasticity": -0.15,
+        "apc_dispersion": 0.08,
+        "basket": {
+          "exempt": 0.4,
+          "reduced": 0.38,
+          "standard": 0.19,
+          "demerit": 0.03
+        },
+        "informal_purchase_share": 0.5
+      },
+      "behavior": {
+        "eti": 0.15,
+        "mobility": 0.15,
+        "informality_penalty": 0.15,
+        "evadable_share": 0.7,
+        "risk_aversion": 2.0,
+        "tax_morale": 0.3,
+        "avoidance_access": 0.0
+      },
+      "information": {
+        "literacy": 0.7,
+        "awareness": {
+          "rebate": 0.15,
+          "deductions": 0.1,
+          "transfers": 0.5
+        },
+        "rate_perception": "average",
+        "perceived_audit_prob": 0.01,
+        "compliance_cost": 1500.0,
+        "peer_learning": 0.15
+      },
+      "sources": [
+        "Illustrative values for demonstration; not yet calibrated"
+      ]
+    },
+    {
+      "id": "semi_urban_traders",
+      "name": "Semi-urban traders & MSME owners",
+      "description": "",
+      "region": "semi_urban",
+      "population": 80000000.0,
+      "tags": [],
+      "demographics": {
+        "household_size": 4.5,
+        "earners_per_household": 1.5
+      },
+      "income": {
+        "kind": "lognormal_pareto",
+        "median": 480000.0,
+        "sigma": 0.75,
+        "pareto_alpha": 2.0,
+        "tail_start_quantile": 0.92
+      },
+      "income_sources": {
+        "wage": 0.1,
+        "self_employment": 0.75,
+        "agriculture": 0.0,
+        "capital": 0.15
+      },
+      "formal_share": 0.3,
+      "wealth": {
+        "kind": "lognormal",
+        "median": 2500000.0,
+        "sigma": 1.1,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "inherited_wealth_share": 0.4,
+      "income_wealth_correlation": 0.6,
+      "consumption": {
+        "apc_at_median": 0.78,
+        "apc_income_elasticity": -0.15,
+        "apc_dispersion": 0.08,
+        "basket": {
+          "exempt": 0.3,
+          "reduced": 0.35,
+          "standard": 0.3,
+          "demerit": 0.05
+        },
+        "informal_purchase_share": 0.35
+      },
+      "behavior": {
+        "eti": 0.3,
+        "mobility": 0.3,
+        "informality_penalty": 0.15,
+        "evadable_share": 0.7,
+        "risk_aversion": 2.0,
+        "tax_morale": 0.3,
+        "avoidance_access": 0.1
+      },
+      "information": {
+        "literacy": 0.8,
+        "awareness": {
+          "rebate": 0.5,
+          "deductions": 0.45,
+          "transfers": 0.4
+        },
+        "rate_perception": "exact",
+        "perceived_audit_prob": null,
+        "compliance_cost": 1000.0,
+        "peer_learning": 0.15
+      },
+      "sources": [
+        "Illustrative values for demonstration; not yet calibrated"
+      ]
+    },
+    {
+      "id": "urban_informal",
+      "name": "Urban informal & casual workers",
+      "description": "",
+      "region": "urban",
+      "population": 160000000.0,
+      "tags": [
+        "bpl"
+      ],
+      "demographics": {
+        "household_size": 4.2,
+        "earners_per_household": 1.6
+      },
+      "income": {
+        "kind": "lognormal",
+        "median": 260000.0,
+        "sigma": 0.5,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "income_sources": {
+        "wage": 0.75,
+        "self_employment": 0.22,
+        "agriculture": 0.0,
+        "capital": 0.03
+      },
+      "formal_share": 0.1,
+      "wealth": {
+        "kind": "lognormal",
+        "median": 200000.0,
+        "sigma": 1.1,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "inherited_wealth_share": 0.4,
+      "income_wealth_correlation": 0.6,
+      "consumption": {
+        "apc_at_median": 0.95,
+        "apc_income_elasticity": -0.15,
+        "apc_dispersion": 0.08,
+        "basket": {
+          "exempt": 0.38,
+          "reduced": 0.38,
+          "standard": 0.21,
+          "demerit": 0.03
+        },
+        "informal_purchase_share": 0.5
+      },
+      "behavior": {
+        "eti": 0.15,
+        "mobility": 0.2,
+        "informality_penalty": 0.15,
+        "evadable_share": 0.7,
+        "risk_aversion": 2.0,
+        "tax_morale": 0.3,
+        "avoidance_access": 0.0
+      },
+      "information": {
+        "literacy": 0.7,
+        "awareness": {
+          "rebate": 0.2,
+          "deductions": 0.1,
+          "transfers": 0.45
+        },
+        "rate_perception": "average",
+        "perceived_audit_prob": 0.01,
+        "compliance_cost": 1500.0,
+        "peer_learning": 0.15
+      },
+      "sources": [
+        "Illustrative values for demonstration; not yet calibrated"
+      ]
+    },
+    {
+      "id": "urban_formal_lower",
+      "name": "Urban formal salaried, lower-middle",
+      "description": "",
+      "region": "urban",
+      "population": 115000000.0,
+      "tags": [],
+      "demographics": {
+        "household_size": 3.9,
+        "earners_per_household": 1.4
+      },
+      "income": {
+        "kind": "lognormal",
+        "median": 550000.0,
+        "sigma": 0.45,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "income_sources": {
+        "wage": 0.9,
+        "self_employment": 0.03,
+        "agriculture": 0.0,
+        "capital": 0.07
+      },
+      "formal_share": 0.85,
+      "wealth": {
+        "kind": "lognormal",
+        "median": 1000000.0,
+        "sigma": 1.0,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "inherited_wealth_share": 0.4,
+      "income_wealth_correlation": 0.6,
+      "consumption": {
+        "apc_at_median": 0.82,
+        "apc_income_elasticity": -0.15,
+        "apc_dispersion": 0.08,
+        "basket": {
+          "exempt": 0.3,
+          "reduced": 0.37,
+          "standard": 0.29,
+          "demerit": 0.04
+        },
+        "informal_purchase_share": 0.3
+      },
+      "behavior": {
+        "eti": 0.15,
+        "mobility": 0.05,
+        "informality_penalty": 0.15,
+        "evadable_share": 0.1,
+        "risk_aversion": 2.0,
+        "tax_morale": 0.4,
+        "avoidance_access": 0.0
+      },
+      "information": {
+        "literacy": 0.92,
+        "awareness": {
+          "rebate": 0.7,
+          "deductions": 0.5,
+          "transfers": 0.35
+        },
+        "rate_perception": "average",
+        "perceived_audit_prob": null,
+        "compliance_cost": 800.0,
+        "peer_learning": 0.15
+      },
+      "sources": [
+        "Illustrative values for demonstration; not yet calibrated"
+      ]
+    },
+    {
+      "id": "urban_formal_middle",
+      "name": "Urban formal salaried, upper-middle",
+      "description": "",
+      "region": "urban",
+      "population": 85000000.0,
+      "tags": [],
+      "demographics": {
+        "household_size": 3.7,
+        "earners_per_household": 1.5
+      },
+      "income": {
+        "kind": "lognormal",
+        "median": 1500000.0,
+        "sigma": 0.5,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "income_sources": {
+        "wage": 0.85,
+        "self_employment": 0.05,
+        "agriculture": 0.0,
+        "capital": 0.1
+      },
+      "formal_share": 0.95,
+      "wealth": {
+        "kind": "lognormal",
+        "median": 4000000.0,
+        "sigma": 0.9,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "inherited_wealth_share": 0.4,
+      "income_wealth_correlation": 0.6,
+      "consumption": {
+        "apc_at_median": 0.68,
+        "apc_income_elasticity": -0.15,
+        "apc_dispersion": 0.08,
+        "basket": {
+          "exempt": 0.25,
+          "reduced": 0.33,
+          "standard": 0.37,
+          "demerit": 0.05
+        },
+        "informal_purchase_share": 0.2
+      },
+      "behavior": {
+        "eti": 0.25,
+        "mobility": 0.03,
+        "informality_penalty": 0.15,
+        "evadable_share": 0.1,
+        "risk_aversion": 2.0,
+        "tax_morale": 0.4,
+        "avoidance_access": 0.0
+      },
+      "information": {
+        "literacy": 0.98,
+        "awareness": {
+          "rebate": 0.95,
+          "deductions": 0.85,
+          "transfers": 0.2
+        },
+        "rate_perception": "exact",
+        "perceived_audit_prob": null,
+        "compliance_cost": 500.0,
+        "peer_learning": 0.15
+      },
+      "sources": [
+        "Illustrative values for demonstration; not yet calibrated"
+      ]
+    },
+    {
+      "id": "urban_professionals",
+      "name": "Urban professionals & business owners",
+      "description": "",
+      "region": "urban",
+      "population": 32000000.0,
+      "tags": [],
+      "demographics": {
+        "household_size": 3.6,
+        "earners_per_household": 1.6
+      },
+      "income": {
+        "kind": "lognormal_pareto",
+        "median": 3600000.0,
+        "sigma": 0.6,
+        "pareto_alpha": 1.9,
+        "tail_start_quantile": 0.85
+      },
+      "income_sources": {
+        "wage": 0.35,
+        "self_employment": 0.45,
+        "agriculture": 0.0,
+        "capital": 0.2
+      },
+      "formal_share": 0.8,
+      "wealth": {
+        "kind": "lognormal",
+        "median": 20000000.0,
+        "sigma": 1.0,
+        "pareto_alpha": 1.8,
+        "tail_start_quantile": 0.9
+      },
+      "inherited_wealth_share": 0.4,
+      "income_wealth_correlation": 0.6,
+      "consumption": {
+        "apc_at_median": 0.5,
+        "apc_income_elasticity": -0.15,
+        "apc_dispersion": 0.08,
+        "basket": {
+          "exempt": 0.2,
+          "reduced": 0.3,
+          "standard": 0.42,
+          "demerit": 0.08
+        },
+        "informal_purchase_share": 0.15
+      },
+      "behavior": {
+        "eti": 0.4,
+        "mobility": 0.1,
+        "informality_penalty": 0.15,
+        "evadable_share": 0.35,
+        "risk_aversion": 2.0,
+        "tax_morale": 0.5,
+        "avoidance_access": 0.3
+      },
+      "information": {
+        "literacy": 1.0,
+        "awareness": {
+          "rebate": 0.95,
+          "deductions": 0.95,
+          "transfers": 0.15
+        },
+        "rate_perception": "exact",
+        "perceived_audit_prob": 0.08,
+        "compliance_cost": 300.0,
+        "peer_learning": 0.15
+      },
+      "sources": [
+        "Illustrative values for demonstration; not yet calibrated"
+      ]
+    },
+    {
+      "id": "top_elite",
+      "name": "Top 0.1% (business & capital income)",
+      "description": "",
+      "region": "urban",
+      "population": 1500000.0,
+      "tags": [],
+      "demographics": {
+        "household_size": 4.0,
+        "earners_per_household": 1.8
+      },
+      "income": {
+        "kind": "pareto",
+        "median": 40000000.0,
+        "sigma": 0.6,
+        "pareto_alpha": 1.6,
+        "tail_start_quantile": 0.9
+      },
+      "income_sources": {
+        "wage": 0.2,
+        "self_employment": 0.3,
+        "agriculture": 0.0,
+        "capital": 0.5
+      },
+      "formal_share": 0.9,
+      "wealth": {
+        "kind": "pareto",
+        "median": 400000000.0,
+        "sigma": 0.6,
+        "pareto_alpha": 1.4,
+        "tail_start_quantile": 0.9
+      },
+      "inherited_wealth_share": 0.6,
+      "income_wealth_correlation": 0.6,
+      "consumption": {
+        "apc_at_median": 0.25,
+        "apc_income_elasticity": -0.15,
+        "apc_dispersion": 0.08,
+        "basket": {
+          "exempt": 0.15,
+          "reduced": 0.25,
+          "standard": 0.45,
+          "demerit": 0.15
+        },
+        "informal_purchase_share": 0.1
+      },
+      "behavior": {
+        "eti": 0.5,
+        "mobility": 0.05,
+        "informality_penalty": 0.15,
+        "evadable_share": 0.3,
+        "risk_aversion": 2.0,
+        "tax_morale": 0.5,
+        "avoidance_access": 0.5
+      },
+      "information": {
+        "literacy": 1.0,
+        "awareness": {
+          "rebate": 1.0,
+          "deductions": 1.0,
+          "transfers": 0.1
+        },
+        "rate_perception": "exact",
+        "perceived_audit_prob": 0.15,
+        "compliance_cost": 0.0,
+        "peer_learning": 0.15
+      },
+      "sources": [
+        "Illustrative values for demonstration; not yet calibrated"
+      ]
+    }
+  ],
+  "targets": {
+    "population": 1450000000.0,
+    "total_income": 230000000000000.0,
+    "income_tax_revenue": 12000000000000.0,
+    "gst_revenue": 20000000000000.0,
+    "income_tax_payers": 30000000.0,
+    "gini_income": 0.55
+  },
+  "settings": {
+    "samples_per_set": 1500,
+    "poverty_line_per_capita": 36000.0,
+    "seed": 7
+  }
+}

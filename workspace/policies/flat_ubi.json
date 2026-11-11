@@ -1,0 +1,63 @@
+{
+  "id": "flat_ubi",
+  "name": "Flat 15% above ₹3 lakh + universal basic income",
+  "description": "One rate above an exemption, plus ₹12,000 per household for everyone with no claim needed.",
+  "origin": "user",
+  "income_tax": {
+    "enabled": true,
+    "slabs": [
+      {
+        "threshold": 0.0,
+        "rate": 0.0
+      },
+      {
+        "threshold": 300000.0,
+        "rate": 0.15
+      }
+    ],
+    "standard_deduction": 0.0,
+    "rebate_threshold": 0.0,
+    "rebate_max": 0.0,
+    "rebate_requires_claim": true,
+    "optional_deduction_cap": 0.0,
+    "exempt_agriculture": true,
+    "cess": 0.0
+  },
+  "consumption_tax": {
+    "enabled": true,
+    "rates": {
+      "exempt": 0.0,
+      "reduced": 0.05,
+      "standard": 0.18,
+      "demerit": 0.4
+    }
+  },
+  "wealth_tax": {
+    "enabled": false,
+    "threshold": 50000000.0,
+    "rate": 0.01
+  },
+  "transfers": [
+    {
+      "id": "ubi",
+      "name": "Universal basic income",
+      "kind": "universal",
+      "amount_per_household": 12000.0,
+      "target": {
+        "regions": null,
+        "tags_any": null,
+        "max_reported_income": null
+      },
+      "requires_claim": false,
+      "leakage": 0.03,
+      "exclusion_error": 0.0,
+      "inclusion_error": 0.0
+    }
+  ],
+  "enforcement": {
+    "audit_prob": 0.02,
+    "penalty_rate": 1.0,
+    "audit_capacity": null
+  },
+  "outreach": 0.0
+}

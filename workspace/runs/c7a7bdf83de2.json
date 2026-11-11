@@ -1,0 +1,3253 @@
+{
+  "id": "c7a7bdf83de2",
+  "name": "Demo: three reforms vs status quo",
+  "created_at": "2026-10-27T06:55:15+00:00",
+  "request": {
+    "economy_id": "india_illustrative",
+    "baseline_policy_id": "india_status_quo",
+    "policy_ids": [
+      "india_old_regime",
+      "flat_ubi",
+      "status_quo_auto_enrol"
+    ],
+    "mode": "M3",
+    "periods": 6,
+    "revenue_neutral": true,
+    "inequality_aversion": 1.0,
+    "samples_per_set": null,
+    "seed": null,
+    "name": "Demo: three reforms vs status quo"
+  },
+  "economy": {
+    "id": "india_illustrative",
+    "name": "India (illustrative, 12 sets)",
+    "sets": 12
+  },
+  "mode_label": "Adaptive learning over time",
+  "sampled_households": 18000,
+  "represented_population": 1448500000.0,
+  "seconds": 15.87,
+  "results": [
+    {
+      "policy_id": "india_status_quo",
+      "policy_name": "India status quo (new regime FY2025-26 + GST)",
+      "origin": "baseline",
+      "is_baseline": true,
+      "balancing_lump_sum": 0.0,
+      "report": {
+        "summary": {
+          "revenue": {
+            "income_tax": 7009716789274.566,
+            "penalties": 271861407317.23557,
+            "gst": 6298313699250.615,
+            "wealth_tax": 0.0,
+            "transfer_spending": 1790691215005.6157,
+            "transfers_received": 1556257809480.4263,
+            "lump_sum": 0.0,
+            "gross": 13579891895842.418,
+            "leakage": 234433405525.18945,
+            "net": 11789200680836.803
+          },
+          "equality": {
+            "gini_pretax": 0.6464762271335821,
+            "gini_disposable": 0.6273736881470934,
+            "theil": {
+              "total": 1.1039284441612154,
+              "within": 0.22037803266921277,
+              "between": 0.8835504114920026
+            },
+            "atkinson": 0.5027337033019077,
+            "top1": 0.23132374733931782,
+            "top10": 0.5521577424824331,
+            "bottom50": 0.128763378255351,
+            "palma": 6.0840197592667105,
+            "poverty_headcount": 0.2961569439650213,
+            "poverty_gap": 0.08700591315621294
+          },
+          "equity": {
+            "kakwani": 0.22218751919417234,
+            "reynolds_smith": 0.019102538986488726,
+            "effective_tax_rate": 0.06247952701543148
+          },
+          "efficiency": {
+            "output": 192441182907680.12,
+            "potential_output": 202348966495818.16,
+            "output_loss_share": 0.04896384577453616,
+            "excess_burden": 2389527337697.3945
+          },
+          "welfare": {
+            "mean_utility_pc": 100933.56009524211,
+            "ede_utility_pc": 53881.73006381609,
+            "mean_disposable_pc": 128682.33988408737,
+            "inequality_aversion": 1.0
+          },
+          "compliance": {
+            "formal_share": 0.2258890806581521,
+            "evader_share_of_formal": 0.13821437512732593,
+            "tax_gap_share": 0.39261116351893877,
+            "audit_prob": 0.02,
+            "equilibrium_iterations": 1,
+            "equilibrium_converged": true
+          },
+          "information": {
+            "benefit_capture_rate": 0.5967881441612447,
+            "unclaimed_benefits": 970633197961.4589,
+            "extra_tax_from_unawareness": 45416111347.841545,
+            "statutory_liability": 11495324133213.984,
+            "awareness": {
+              "rebate": 0.42453433097341814,
+              "deductions": 0.32687534998545686,
+              "transfers": 0.6594978167888164
+            }
+          },
+          "taxpayers": 14123574.237117263
+        },
+        "sets": [
+          {
+            "id": "rural_landless",
+            "name": "Rural landless casual labour",
+            "population": 250000000.00000003,
+            "households": 54347826.086956516,
+            "pretax_pc": 31262.448685166066,
+            "disposable_pc": 32197.448685166066,
+            "utility_pc": 28810.735937798854,
+            "income_tax_pc": 0.0,
+            "gst_pc": 544.6719578066577,
+            "transfers_pc": 1176.9565217391303,
+            "net_tax_pc": -632.2845639324728,
+            "effective_tax_rate": -0.02022504923718563,
+            "formal_share": 0.018000000000000002,
+            "evader_share": 0.0,
+            "benefit_capture": 0.5833333333333334,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.6833333333333331,
+            "gini": 0.24278228294593152
+          },
+          {
+            "id": "rural_marginal_farmers",
+            "name": "Rural marginal & small farmers",
+            "population": 280000000.00000006,
+            "households": 58333333.33333333,
+            "pretax_pc": 37759.8381600028,
+            "disposable_pc": 39366.504826669465,
+            "utility_pc": 35187.720042521614,
+            "income_tax_pc": 0.0,
+            "gst_pc": 746.0722241475986,
+            "transfers_pc": 2120.833333333333,
+            "net_tax_pc": -1374.7611091857343,
+            "effective_tax_rate": -0.03640802440308002,
+            "formal_share": 0.034,
+            "evader_share": 0.0,
+            "benefit_capture": 0.6786666666666669,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.5239999999999999,
+            "gini": 0.2647543385951392
+          },
+          {
+            "id": "rural_large_farmers",
+            "name": "Rural large farmers",
+            "population": 35000000.00000001,
+            "households": 6730769.23076923,
+            "pretax_pc": 156763.89588750227,
+            "disposable_pc": 157654.9673705815,
+            "utility_pc": 133014.54027464136,
+            "income_tax_pc": 0.0,
+            "gst_pc": 4192.962414961557,
+            "transfers_pc": 1072.3076923076922,
+            "net_tax_pc": 3120.7370857285136,
+            "effective_tax_rate": 0.019907243744235813,
+            "formal_share": 0.14200000000000004,
+            "evader_share": 0.0013333333333333335,
+            "benefit_capture": 0.8033333333333333,
+            "unaware_extra_tax_pc": 1.3727179108025436,
+            "poverty_rate": 0.04466666666666666,
+            "gini": 0.4126149403489173
+          },
+          {
+            "id": "rural_nonfarm_self",
+            "name": "Rural non-farm self-employed",
+            "population": 170000000.0,
+            "households": 36956521.73913044,
+            "pretax_pc": 57210.50614660564,
+            "disposable_pc": 58087.653416212604,
+            "utility_pc": 47308.46574827343,
+            "income_tax_pc": 0.0,
+            "gst_pc": 1244.177969127782,
+            "transfers_pc": 1097.8260869565215,
+            "net_tax_pc": 146.37852560777708,
+            "effective_tax_rate": 0.002558595185868005,
+            "formal_share": 0.04666666666666667,
+            "evader_share": 0.0006666666666666666,
+            "benefit_capture": 0.5433333333333333,
+            "unaware_extra_tax_pc": 0.44405727528179084,
+            "poverty_rate": 0.29933333333333334,
+            "gini": 0.32295338224393966
+          },
+          {
+            "id": "rural_salaried",
+            "name": "Rural salaried workers",
+            "population": 80000000.0,
+            "households": 18604651.1627907,
+            "pretax_pc": 110625.45840836875,
+            "disposable_pc": 110812.17167680811,
+            "utility_pc": 93082.04357608792,
+            "income_tax_pc": 21.854050571090553,
+            "gst_pc": 3346.2231533412883,
+            "transfers_pc": 211.1627906976744,
+            "net_tax_pc": 3159.5098849019564,
+            "effective_tax_rate": 0.028560422983638832,
+            "formal_share": 0.5273333333333333,
+            "evader_share": 0.015333333333333329,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 45.1184674868148,
+            "poverty_rate": 0.022666666666666665,
+            "gini": 0.2753365938825165
+          },
+          {
+            "id": "semi_urban_informal",
+            "name": "Semi-urban informal workers",
+            "population": 160000000.0,
+            "households": 36363636.36363636,
+            "pretax_pc": 61843.10311520427,
+            "disposable_pc": 62753.10311520426,
+            "utility_pc": 53108.55690701725,
+            "income_tax_pc": 0.0,
+            "gst_pc": 1578.0544975081996,
+            "transfers_pc": 1136.8181818181818,
+            "net_tax_pc": 441.2363156900178,
+            "effective_tax_rate": 0.007134769981837131,
+            "formal_share": 0.08066666666666666,
+            "evader_share": 0.0,
+            "benefit_capture": 0.538,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.188,
+            "gini": 0.27290416677626184
+          },
+          {
+            "id": "semi_urban_traders",
+            "name": "Semi-urban traders & MSME owners",
+            "population": 80000000.0,
+            "households": 17777777.777777776,
+            "pretax_pc": 151945.7721075882,
+            "disposable_pc": 152045.7600388623,
+            "utility_pc": 112137.91920367094,
+            "income_tax_pc": 16.984387405584997,
+            "gst_pc": 5331.370772293201,
+            "transfers_pc": 166.66666666666666,
+            "net_tax_pc": 5231.382841019065,
+            "effective_tax_rate": 0.03442927544778858,
+            "formal_share": 0.31,
+            "evader_share": 0.03866666666666666,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 117.29948925270911,
+            "poverty_rate": 0.07399999999999998,
+            "gini": 0.44408360919439993
+          },
+          {
+            "id": "urban_informal",
+            "name": "Urban informal & casual workers",
+            "population": 160000000.0000001,
+            "households": 38095238.0952381,
+            "pretax_pc": 70163.99943942776,
+            "disposable_pc": 71047.75034557584,
+            "utility_pc": 59975.67292350673,
+            "income_tax_pc": 0.0,
+            "gst_pc": 1920.3797471199669,
+            "transfers_pc": 1101.9047619047612,
+            "net_tax_pc": 818.5336028766675,
+            "effective_tax_rate": 0.011666005493077738,
+            "formal_share": 0.10066666666666667,
+            "evader_share": 0.0013333333333333335,
+            "benefit_capture": 0.4906666666666666,
+            "unaware_extra_tax_pc": 0.9769610243674008,
+            "poverty_rate": 0.13133333333333327,
+            "gini": 0.27293677048976384
+          },
+          {
+            "id": "urban_formal_lower",
+            "name": "Urban formal salaried, lower-middle",
+            "population": 114999999.99999999,
+            "households": 29487179.487179488,
+            "pretax_pc": 155956.59556646523,
+            "disposable_pc": 156047.69121118012,
+            "utility_pc": 129328.66128461028,
+            "income_tax_pc": 136.53466272814998,
+            "gst_pc": 6407.444069660298,
+            "transfers_pc": 233.3333333333334,
+            "net_tax_pc": 6316.3484249454195,
+            "effective_tax_rate": 0.04050068162877749,
+            "formal_share": 0.8500000000000001,
+            "evader_share": 0.038,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 122.46757464909604,
+            "poverty_rate": 0.0013333333333333335,
+            "gini": 0.24818297580510273
+          },
+          {
+            "id": "urban_formal_middle",
+            "name": "Urban formal salaried, upper-middle",
+            "population": 85000000.0,
+            "households": 22972972.972972974,
+            "pretax_pc": 442082.11947025167,
+            "disposable_pc": 431551.3976664105,
+            "utility_pc": 333905.8366247227,
+            "income_tax_pc": 10600.096168274129,
+            "gst_pc": 19704.041073061537,
+            "transfers_pc": 241.08108108108107,
+            "net_tax_pc": 30234.762876902678,
+            "effective_tax_rate": 0.06839173435273312,
+            "formal_share": 0.9453333333333331,
+            "evader_share": 0.18066666666666664,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 175.03939195640186,
+            "poverty_rate": 0.0,
+            "gini": 0.24399126950929462
+          },
+          {
+            "id": "urban_professionals",
+            "name": "Urban professionals & business owners",
+            "population": 32000000.000000004,
+            "households": 8888888.888888888,
+            "pretax_pc": 1247258.8732918054,
+            "disposable_pc": 1171044.9947767544,
+            "utility_pc": 840465.7311238751,
+            "income_tax_pc": 71836.4433301308,
+            "gst_pc": 46456.89740485066,
+            "transfers_pc": 247.77777777777774,
+            "net_tax_pc": 122670.7759199013,
+            "effective_tax_rate": 0.09835229762378413,
+            "formal_share": 0.7773333333333334,
+            "evader_share": 0.5226666666666666,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 99.39708688014552,
+            "poverty_rate": 0.0,
+            "gini": 0.37931485340256477
+          },
+          {
+            "id": "top_elite",
+            "name": "Top 0.1% (business & capital income)",
+            "population": 1500000.0,
+            "households": 375000.0,
+            "pretax_pc": 14192790.806754624,
+            "disposable_pc": 11595997.763899919,
+            "utility_pc": 7858865.841815539,
+            "income_tax_pc": 2527422.578103472,
+            "gst_pc": 295136.1855963965,
+            "transfers_pc": 232.0,
+            "net_tax_pc": 2891929.228451101,
+            "effective_tax_rate": 0.20376043498610405,
+            "formal_share": 0.866,
+            "evader_share": 0.866,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.0,
+            "gini": 0.43348177820959455
+          }
+        ],
+        "bands": [
+          {
+            "band": "P0–10",
+            "income_tax": 0.0,
+            "gst": 0.023195780002672153,
+            "wealth_tax": 0.0,
+            "transfers": -0.08874713312722313,
+            "net": -0.06555135312455097
+          },
+          {
+            "band": "P10–20",
+            "income_tax": 0.0,
+            "gst": 0.022535565311958536,
+            "wealth_tax": 0.0,
+            "transfers": -0.06087137716685274,
+            "net": -0.0383358118548942
+          },
+          {
+            "band": "P20–30",
+            "income_tax": 0.0,
+            "gst": 0.022636590554945282,
+            "wealth_tax": 0.0,
+            "transfers": -0.046461891177678245,
+            "net": -0.023825300622732963
+          },
+          {
+            "band": "P30–40",
+            "income_tax": 0.0,
+            "gst": 0.02332250628243226,
+            "wealth_tax": 0.0,
+            "transfers": -0.03616613787645018,
+            "net": -0.012843631594017916
+          },
+          {
+            "band": "P40–50",
+            "income_tax": 0.0,
+            "gst": 0.02426346880829595,
+            "wealth_tax": 0.0,
+            "transfers": -0.02737214130511371,
+            "net": -0.0031086724968177604
+          },
+          {
+            "band": "P50–60",
+            "income_tax": 0.0,
+            "gst": 0.02564507489274826,
+            "wealth_tax": 0.0,
+            "transfers": -0.019194298526795356,
+            "net": 0.006450776365952905
+          },
+          {
+            "band": "P60–70",
+            "income_tax": 0.0,
+            "gst": 0.02771646769235378,
+            "wealth_tax": 0.0,
+            "transfers": -0.012516302125097072,
+            "net": 0.015200165567256708
+          },
+          {
+            "band": "P70–80",
+            "income_tax": 0.0,
+            "gst": 0.0307469563845364,
+            "wealth_tax": 0.0,
+            "transfers": -0.006896399232669094,
+            "net": 0.02385055715186731
+          },
+          {
+            "band": "P80–90",
+            "income_tax": 8.644914651017644e-05,
+            "gst": 0.03519914194746576,
+            "wealth_tax": 0.0,
+            "transfers": -0.002715138112709316,
+            "net": 0.03257045298126662
+          },
+          {
+            "band": "P90–99",
+            "income_tax": 0.016850102518863447,
+            "gst": 0.04186724051904613,
+            "wealth_tax": 0.0,
+            "transfers": -0.0005897530615888798,
+            "net": 0.058127589976320705
+          },
+          {
+            "band": "P99–100",
+            "income_tax": 0.12673081177652112,
+            "gst": 0.02765210363152293,
+            "wealth_tax": 0.0,
+            "transfers": -7.621773695316899e-05,
+            "net": 0.15430669767109087
+          }
+        ],
+        "lorenz": {
+          "pretax": [
+            {
+              "p": 0.0,
+              "share": 0.0
+            },
+            {
+              "p": 0.05,
+              "share": 0.005274166856160472
+            },
+            {
+              "p": 0.1,
+              "share": 0.012602038322009923
+            },
+            {
+              "p": 0.15000000000000002,
+              "share": 0.021333484248844032
+            },
+            {
+              "p": 0.2,
+              "share": 0.031339707459267
+            },
+            {
+              "p": 0.25,
+              "share": 0.04260019427977431
+            },
+            {
+              "p": 0.30000000000000004,
+              "share": 0.05515385274235049
+            },
+            {
+              "p": 0.35000000000000003,
+              "share": 0.06907924185907659
+            },
+            {
+              "p": 0.4,
+              "share": 0.08449582254999898
+            },
+            {
+              "p": 0.45,
+              "share": 0.10157105451156535
+            },
+            {
+              "p": 0.5,
+              "share": 0.1205273734083971
+            },
+            {
+              "p": 0.55,
+              "share": 0.1416631204182738
+            },
+            {
+              "p": 0.6000000000000001,
+              "share": 0.16538260193990975
+            },
+            {
+              "p": 0.65,
+              "share": 0.19224413693905043
+            },
+            {
+              "p": 0.7000000000000001,
+              "share": 0.2230460020890144
+            },
+            {
+              "p": 0.75,
+              "share": 0.2589760126167607
+            },
+            {
+              "p": 0.8,
+              "share": 0.3019526079055819
+            },
+            {
+              "p": 0.8500000000000001,
+              "share": 0.35543804295145415
+            },
+            {
+              "p": 0.9,
+              "share": 0.42755983889651605
+            },
+            {
+              "p": 0.9500000000000001,
+              "share": 0.5467509284964263
+            },
+            {
+              "p": 1.0,
+              "share": 1.0
+            }
+          ],
+          "disposable": [
+            {
+              "p": 0.0,
+              "share": 0.0
+            },
+            {
+              "p": 0.05,
+              "share": 0.0058553380100000866
+            },
+            {
+              "p": 0.1,
+              "share": 0.013857744465299703
+            },
+            {
+              "p": 0.15000000000000002,
+              "share": 0.023347005900360516
+            },
+            {
+              "p": 0.2,
+              "share": 0.03411762708196663
+            },
+            {
+              "p": 0.25,
+              "share": 0.04619037659099036
+            },
+            {
+              "p": 0.30000000000000004,
+              "share": 0.059591117795317804
+            },
+            {
+              "p": 0.35000000000000003,
+              "share": 0.074394261120491
+            },
+            {
+              "p": 0.4,
+              "share": 0.09075541571695735
+            },
+            {
+              "p": 0.45,
+              "share": 0.1088034072366191
+            },
+            {
+              "p": 0.5,
+              "share": 0.128763378255351
+            },
+            {
+              "p": 0.55,
+              "share": 0.15095749138395395
+            },
+            {
+              "p": 0.6000000000000001,
+              "share": 0.1757866607861916
+            },
+            {
+              "p": 0.65,
+              "share": 0.2038412747544263
+            },
+            {
+              "p": 0.7000000000000001,
+              "share": 0.23593211282452017
+            },
+            {
+              "p": 0.75,
+              "share": 0.27327810217417764
+            },
+            {
+              "p": 0.8,
+              "share": 0.3178637848872416
+            },
+            {
+              "p": 0.8500000000000001,
+              "share": 0.37325512392174665
+            },
+            {
+              "p": 0.9,
+              "share": 0.4478422575175669
+            },
+            {
+              "p": 0.9500000000000001,
+              "share": 0.5709241126657575
+            },
+            {
+              "p": 1.0,
+              "share": 1.0
+            }
+          ]
+        },
+        "transfers": [
+          {
+            "id": "farmer_support",
+            "name": "Farmer income support (PM-KISAN style)",
+            "beneficiary_households": 54102938.14895054,
+            "spending": 341702767256.5298,
+            "received": 324617628893.70325,
+            "capture_rate": 0.7148735632183909
+          },
+          {
+            "id": "food_subsidy",
+            "name": "Food subsidy (PDS style, cash value)",
+            "beneficiary_households": 136848908.95408034,
+            "spending": 1448988447749.086,
+            "received": 1231640180586.723,
+            "capture_rate": 0.5739315625546807
+          }
+        ]
+      },
+      "history": [
+        {
+          "period": 0,
+          "net_revenue": 13666017688721.148,
+          "gini_disposable": 0.6253697860957833,
+          "benefit_capture_rate": 0.4709205949962289,
+          "evader_share_of_formal": 0.16457548042874123,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.314957692179882,
+          "aware_deductions": 0.2299787046366579,
+          "aware_transfers": 0.4948515022727067
+        },
+        {
+          "period": 1,
+          "net_revenue": 12830110226852.41,
+          "gini_disposable": 0.6266821430048197,
+          "benefit_capture_rate": 0.4993256934946646,
+          "evader_share_of_formal": 0.15779995687322862,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.3352620076987168,
+          "aware_deductions": 0.24818554351633082,
+          "aware_transfers": 0.5296585258165349
+        },
+        {
+          "period": 2,
+          "net_revenue": 12225951312708.396,
+          "gini_disposable": 0.6275261768931522,
+          "benefit_capture_rate": 0.5257288520364283,
+          "evader_share_of_formal": 0.15312091059832925,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.3552694270434991,
+          "aware_deductions": 0.26543282233545146,
+          "aware_transfers": 0.5634666976523361
+        },
+        {
+          "period": 3,
+          "net_revenue": 11929525426568.21,
+          "gini_disposable": 0.6277794476746574,
+          "benefit_capture_rate": 0.5495987910380077,
+          "evader_share_of_formal": 0.14769728193854292,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.3786311051297007,
+          "aware_deductions": 0.2840924344024389,
+          "aware_transfers": 0.5959398637708546
+        },
+        {
+          "period": 4,
+          "net_revenue": 11862341461160.666,
+          "gini_disposable": 0.627562924000904,
+          "benefit_capture_rate": 0.5733693059820795,
+          "evader_share_of_formal": 0.1431109931136737,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.402037334535609,
+          "aware_deductions": 0.30370389515396606,
+          "aware_transfers": 0.627604070284979
+        },
+        {
+          "period": 5,
+          "net_revenue": 11789200680836.803,
+          "gini_disposable": 0.6273736881470934,
+          "benefit_capture_rate": 0.5967881441612447,
+          "evader_share_of_formal": 0.13821437512732593,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.42453433097341814,
+          "aware_deductions": 0.32687534998545686,
+          "aware_transfers": 0.6594978167888164
+        }
+      ],
+      "full_information": {
+        "ede_utility_pc": 54330.492882184335,
+        "gini_disposable": 0.6256281331717328,
+        "net_revenue": 11176913055141.41,
+        "benefit_capture_rate": 0.8067961078773488,
+        "sets": [
+          {
+            "id": "rural_landless",
+            "utility_pc": 29118.993192787428
+          },
+          {
+            "id": "rural_marginal_farmers",
+            "utility_pc": 35524.325754389196
+          },
+          {
+            "id": "rural_large_farmers",
+            "utility_pc": 133059.08251828243
+          },
+          {
+            "id": "rural_nonfarm_self",
+            "utility_pc": 47705.15131767755
+          },
+          {
+            "id": "rural_salaried",
+            "utility_pc": 93104.95291757258
+          },
+          {
+            "id": "semi_urban_informal",
+            "utility_pc": 53515.34091930579
+          },
+          {
+            "id": "semi_urban_traders",
+            "utility_pc": 112146.41908452193
+          },
+          {
+            "id": "urban_informal",
+            "utility_pc": 60477.87630486393
+          },
+          {
+            "id": "urban_formal_lower",
+            "utility_pc": 129405.39000738983
+          },
+          {
+            "id": "urban_formal_middle",
+            "utility_pc": 334037.01466962503
+          },
+          {
+            "id": "urban_professionals",
+            "utility_pc": 840516.8047736774
+          },
+          {
+            "id": "top_elite",
+            "utility_pc": 7858865.841815539
+          }
+        ]
+      }
+    },
+    {
+      "policy_id": "india_old_regime",
+      "policy_name": "Old regime with deductions",
+      "origin": "user",
+      "is_baseline": false,
+      "balancing_lump_sum": 8848.341033564098,
+      "report": {
+        "summary": {
+          "revenue": {
+            "income_tax": 10091278447919.773,
+            "penalties": 226245139236.14606,
+            "gst": 6172888397643.919,
+            "wealth_tax": 0.0,
+            "transfer_spending": 1790691215005.6157,
+            "transfers_received": 1556257809480.4263,
+            "lump_sum": 2910518396851.494,
+            "gross": 16490411984799.84,
+            "leakage": 234433405525.18945,
+            "net": 11789202372942.73
+          },
+          "equality": {
+            "gini_pretax": 0.6441391998050592,
+            "gini_disposable": 0.6101717016936695,
+            "theil": {
+              "total": 1.0647055336263045,
+              "within": 0.2179587590796685,
+              "between": 0.8467467745466359
+            },
+            "atkinson": 0.47961163698999065,
+            "top1": 0.23002309625404538,
+            "top10": 0.533983385819405,
+            "bottom50": 0.1376211994740498,
+            "palma": 5.465861036639339,
+            "poverty_headcount": 0.2688643424231964,
+            "poverty_gap": 0.07198096768730787
+          },
+          "equity": {
+            "kakwani": 0.23609331084735852,
+            "reynolds_smith": 0.03396749811138966,
+            "effective_tax_rate": 0.06304987787957617
+          },
+          "efficiency": {
+            "output": 190700381711012.8,
+            "potential_output": 202348966495818.16,
+            "output_loss_share": 0.05756681136815234,
+            "excess_burden": 2734575401354.955
+          },
+          "welfare": {
+            "mean_utility_pc": 100695.34832046578,
+            "ede_utility_pc": 56218.82094640289,
+            "mean_disposable_pc": 127393.95314582023,
+            "inequality_aversion": 1.0
+          },
+          "compliance": {
+            "formal_share": 0.22502565872741914,
+            "evader_share_of_formal": 0.3560734069591057,
+            "tax_gap_share": 0.3591784035599474,
+            "audit_prob": 0.02,
+            "equilibrium_iterations": 1,
+            "equilibrium_converged": true
+          },
+          "information": {
+            "benefit_capture_rate": 0.5967881441612447,
+            "unclaimed_benefits": 970633197961.4589,
+            "extra_tax_from_unawareness": 217727074112.48782,
+            "statutory_liability": 15529679854710.934,
+            "awareness": {
+              "rebate": 0.42453433097341814,
+              "deductions": 0.32687534998545686,
+              "transfers": 0.6594978167888164
+            }
+          },
+          "taxpayers": 37698315.01009058
+        },
+        "sets": [
+          {
+            "id": "rural_landless",
+            "name": "Rural landless casual labour",
+            "population": 250000000.00000003,
+            "households": 54347826.086956516,
+            "pretax_pc": 31262.448685166066,
+            "disposable_pc": 34121.001083766954,
+            "utility_pc": 30700.80450438357,
+            "income_tax_pc": 0.0,
+            "gst_pc": 578.1557898228349,
+            "transfers_pc": 1176.9565217391303,
+            "net_tax_pc": -2522.3531305171864,
+            "effective_tax_rate": -0.08068315940056336,
+            "formal_share": 0.018000000000000002,
+            "evader_share": 0.0,
+            "benefit_capture": 0.5833333333333334,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.6339999999999999,
+            "gini": 0.2290955672029824
+          },
+          {
+            "id": "rural_marginal_farmers",
+            "name": "Rural marginal & small farmers",
+            "population": 280000000.00000006,
+            "households": 58333333.33333333,
+            "pretax_pc": 37759.8381600028,
+            "disposable_pc": 41209.909208661986,
+            "utility_pc": 36994.92066497427,
+            "income_tax_pc": 0.0,
+            "gst_pc": 782.2759836874658,
+            "transfers_pc": 2120.833333333333,
+            "net_tax_pc": -3181.9617316383874,
+            "effective_tax_rate": -0.08426841550949463,
+            "formal_share": 0.034,
+            "evader_share": 0.0,
+            "benefit_capture": 0.6786666666666669,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.47999999999999987,
+            "gini": 0.2529113300253665
+          },
+          {
+            "id": "rural_large_farmers",
+            "name": "Rural large farmers",
+            "population": 35000000.00000001,
+            "households": 6730769.23076923,
+            "pretax_pc": 156759.35748012044,
+            "disposable_pc": 159351.87581928362,
+            "utility_pc": 134666.33783446567,
+            "income_tax_pc": 0.0,
+            "gst_pc": 4242.492820000345,
+            "transfers_pc": 1072.3076923076922,
+            "net_tax_pc": 1468.8206346833065,
+            "effective_tax_rate": 0.009369907215073754,
+            "formal_share": 0.14200000000000004,
+            "evader_share": 0.0013333333333333335,
+            "benefit_capture": 0.8033333333333333,
+            "unaware_extra_tax_pc": 5.988797670633114,
+            "poverty_rate": 0.03733333333333333,
+            "gini": 0.4081921464424306
+          },
+          {
+            "id": "rural_nonfarm_self",
+            "name": "Rural non-farm self-employed",
+            "population": 170000000.0,
+            "households": 36956521.73913044,
+            "pretax_pc": 57209.74010503122,
+            "disposable_pc": 60010.29790477551,
+            "utility_pc": 49188.3842594309,
+            "income_tax_pc": 0.0,
+            "gst_pc": 1287.66359139116,
+            "transfers_pc": 1097.8260869565215,
+            "net_tax_pc": -1733.546382266178,
+            "effective_tax_rate": -0.0303015951319402,
+            "formal_share": 0.04666666666666667,
+            "evader_share": 0.0026666666666666666,
+            "benefit_capture": 0.5433333333333333,
+            "unaware_extra_tax_pc": 4.212797501872729,
+            "poverty_rate": 0.274,
+            "gini": 0.3125919041121815
+          },
+          {
+            "id": "rural_salaried",
+            "name": "Rural salaried workers",
+            "population": 80000000.0,
+            "households": 18604651.1627907,
+            "pretax_pc": 110310.80283255884,
+            "disposable_pc": 112363.89045339424,
+            "utility_pc": 94851.08144989653,
+            "income_tax_pc": 207.6547399502853,
+            "gst_pc": 3397.2623885640787,
+            "transfers_pc": 211.1627906976744,
+            "net_tax_pc": 1344.174767728664,
+            "effective_tax_rate": 0.012185341174327157,
+            "formal_share": 0.5273333333333333,
+            "evader_share": 0.04933333333333332,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 194.81827493310547,
+            "poverty_rate": 0.016,
+            "gini": 0.2673875474650349
+          },
+          {
+            "id": "semi_urban_informal",
+            "name": "Semi-urban informal workers",
+            "population": 160000000.0,
+            "households": 36363636.36363636,
+            "pretax_pc": 61841.31951686904,
+            "disposable_pc": 64761.83698706764,
+            "utility_pc": 55066.64247513412,
+            "income_tax_pc": 0.0,
+            "gst_pc": 1630.4738739943737,
+            "transfers_pc": 1136.8181818181818,
+            "net_tax_pc": -1516.8617780223983,
+            "effective_tax_rate": -0.024528289335880513,
+            "formal_share": 0.08066666666666666,
+            "evader_share": 0.006666666666666666,
+            "benefit_capture": 0.538,
+            "unaware_extra_tax_pc": 11.728208467610353,
+            "poverty_rate": 0.15733333333333335,
+            "gini": 0.2644061141116065
+          },
+          {
+            "id": "semi_urban_traders",
+            "name": "Semi-urban traders & MSME owners",
+            "population": 80000000.0,
+            "households": 17777777.777777776,
+            "pretax_pc": 150849.5633017615,
+            "disposable_pc": 152817.66630488264,
+            "utility_pc": 113788.82202559976,
+            "income_tax_pc": 92.30789032299072,
+            "gst_pc": 5368.777107663613,
+            "transfers_pc": 166.66666666666666,
+            "net_tax_pc": 3400.6741045424546,
+            "effective_tax_rate": 0.022543479941931954,
+            "formal_share": 0.31,
+            "evader_share": 0.072,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 282.658238128433,
+            "poverty_rate": 0.06333333333333334,
+            "gini": 0.4356548862752929
+          },
+          {
+            "id": "urban_informal",
+            "name": "Urban informal & casual workers",
+            "population": 160000000.0000001,
+            "households": 38095238.0952381,
+            "pretax_pc": 70162.87133173477,
+            "disposable_pc": 73153.09351419982,
+            "utility_pc": 62023.047013226635,
+            "income_tax_pc": 0.0,
+            "gst_pc": 1979.4662816208559,
+            "transfers_pc": 1101.9047619047612,
+            "net_tax_pc": -1228.851138939417,
+            "effective_tax_rate": -0.017514265246205876,
+            "formal_share": 0.10066666666666667,
+            "evader_share": 0.004666666666666667,
+            "benefit_capture": 0.4906666666666666,
+            "unaware_extra_tax_pc": 8.380161969919456,
+            "poverty_rate": 0.10666666666666663,
+            "gini": 0.26506333886581346
+          },
+          {
+            "id": "urban_formal_lower",
+            "name": "Urban formal salaried, lower-middle",
+            "population": 114999999.99999999,
+            "households": 29487179.487179488,
+            "pretax_pc": 155618.4537027596,
+            "disposable_pc": 156631.94610712572,
+            "utility_pc": 130203.07537583457,
+            "income_tax_pc": 1453.9025503078813,
+            "gst_pc": 6441.100740968545,
+            "transfers_pc": 233.3333333333334,
+            "net_tax_pc": 5427.608336602405,
+            "effective_tax_rate": 0.034877665260506036,
+            "formal_share": 0.8500000000000001,
+            "evader_share": 0.17933333333333332,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 725.1964917876163,
+            "poverty_rate": 0.0006666666666666668,
+            "gini": 0.23767319400692932
+          },
+          {
+            "id": "urban_formal_middle",
+            "name": "Urban formal salaried, upper-middle",
+            "population": 85000000.0,
+            "households": 22972972.972972974,
+            "pretax_pc": 428844.23838159966,
+            "disposable_pc": 399473.53174310236,
+            "utility_pc": 314703.3056669397,
+            "income_tax_pc": 31662.425355062165,
+            "gst_pc": 18263.412121110683,
+            "transfers_pc": 241.08108108108107,
+            "net_tax_pc": 47634.11875960792,
+            "effective_tax_rate": 0.11107557125956188,
+            "formal_share": 0.9426666666666664,
+            "evader_share": 0.6286666666666665,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 932.536408517257,
+            "poverty_rate": 0.0,
+            "gini": 0.23353467909063597
+          },
+          {
+            "id": "urban_professionals",
+            "name": "Urban professionals & business owners",
+            "population": 32000000.000000004,
+            "households": 8888888.888888888,
+            "pretax_pc": 1232787.907823546,
+            "disposable_pc": 1128738.8530439232,
+            "utility_pc": 809039.7199127917,
+            "income_tax_pc": 103096.7463086566,
+            "gst_pc": 44671.68601045252,
+            "transfers_pc": 247.77777777777774,
+            "net_tax_pc": 148720.74079007524,
+            "effective_tax_rate": 0.12063773488226189,
+            "formal_share": 0.7453333333333334,
+            "evader_share": 0.6980000000000001,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 397.5824695070856,
+            "poverty_rate": 0.0,
+            "gini": 0.3890017378309094
+          },
+          {
+            "id": "top_elite",
+            "name": "Top 0.1% (business & capital income)",
+            "population": 1500000.0,
+            "households": 375000.0,
+            "pretax_pc": 14192790.806754624,
+            "disposable_pc": 11542379.510742055,
+            "utility_pc": 7806758.465532547,
+            "income_tax_pc": 2606453.738103472,
+            "gst_pc": 293625.3087215246,
+            "transfers_pc": 232.0,
+            "net_tax_pc": 2944036.604734094,
+            "effective_tax_rate": 0.20743183245771293,
+            "formal_share": 0.866,
+            "evader_share": 0.866,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.0,
+            "gini": 0.43670073896151385
+          }
+        ],
+        "bands": [
+          {
+            "band": "P0–10",
+            "income_tax": 0.0,
+            "gst": 0.02567672884303404,
+            "wealth_tax": 0.0,
+            "transfers": -0.20228055161123853,
+            "net": -0.17660382276820452
+          },
+          {
+            "band": "P10–20",
+            "income_tax": 0.0,
+            "gst": 0.02419489876342194,
+            "wealth_tax": 0.0,
+            "transfers": -0.137610200780404,
+            "net": -0.11341530201698206
+          },
+          {
+            "band": "P20–30",
+            "income_tax": 0.0,
+            "gst": 0.02397252669152478,
+            "wealth_tax": 0.0,
+            "transfers": -0.10717507302905249,
+            "net": -0.08320254633752772
+          },
+          {
+            "band": "P30–40",
+            "income_tax": 0.0,
+            "gst": 0.024459648705462987,
+            "wealth_tax": 0.0,
+            "transfers": -0.08582755125600405,
+            "net": -0.061367902550541066
+          },
+          {
+            "band": "P40–50",
+            "income_tax": 0.0,
+            "gst": 0.02524230826786919,
+            "wealth_tax": 0.0,
+            "transfers": -0.06819719750317141,
+            "net": -0.04295488923530222
+          },
+          {
+            "band": "P50–60",
+            "income_tax": 0.0,
+            "gst": 0.02649248329994182,
+            "wealth_tax": 0.0,
+            "transfers": -0.05239560320228374,
+            "net": -0.02590311990234192
+          },
+          {
+            "band": "P60–70",
+            "income_tax": 0.0,
+            "gst": 0.028443971935311,
+            "wealth_tax": 0.0,
+            "transfers": -0.03874274265511335,
+            "net": -0.010298770719802345
+          },
+          {
+            "band": "P70–80",
+            "income_tax": 2.775838573825187e-06,
+            "gst": 0.03137306907220417,
+            "wealth_tax": 0.0,
+            "transfers": -0.02645526744966849,
+            "net": 0.004920577461109504
+          },
+          {
+            "band": "P80–90",
+            "income_tax": 0.0005781285746248259,
+            "gst": 0.03568413950514543,
+            "wealth_tax": 0.0,
+            "transfers": -0.015420556994830505,
+            "net": 0.02084171108493975
+          },
+          {
+            "band": "P90–99",
+            "income_tax": 0.05574260766628085,
+            "gst": 0.040278101936972094,
+            "wealth_tax": 0.0,
+            "transfers": -0.005698897624464525,
+            "net": 0.09032181197878841
+          },
+          {
+            "band": "P99–100",
+            "income_tax": 0.14200021016599595,
+            "gst": 0.027106510778905996,
+            "wealth_tax": 0.0,
+            "transfers": -0.0007812115535114177,
+            "net": 0.16832550939139052
+          }
+        ],
+        "lorenz": {
+          "pretax": [
+            {
+              "p": 0.0,
+              "share": 0.0
+            },
+            {
+              "p": 0.05,
+              "share": 0.005322311888132887
+            },
+            {
+              "p": 0.1,
+              "share": 0.012717075550538652
+            },
+            {
+              "p": 0.15000000000000002,
+              "share": 0.021528226150125358
+            },
+            {
+              "p": 0.2,
+              "share": 0.03162579078935167
+            },
+            {
+              "p": 0.25,
+              "share": 0.04298906853642306
+            },
+            {
+              "p": 0.30000000000000004,
+              "share": 0.05565732259381732
+            },
+            {
+              "p": 0.35000000000000003,
+              "share": 0.06970982909657568
+            },
+            {
+              "p": 0.4,
+              "share": 0.08526713945921918
+            },
+            {
+              "p": 0.45,
+              "share": 0.10249824202767881
+            },
+            {
+              "p": 0.5,
+              "share": 0.12162760296209821
+            },
+            {
+              "p": 0.55,
+              "share": 0.1429562868363752
+            },
+            {
+              "p": 0.6000000000000001,
+              "share": 0.16689229074483977
+            },
+            {
+              "p": 0.65,
+              "share": 0.193999030246726
+            },
+            {
+              "p": 0.7000000000000001,
+              "share": 0.22508206905366723
+            },
+            {
+              "p": 0.75,
+              "share": 0.2613370961552797
+            },
+            {
+              "p": 0.8,
+              "share": 0.3047013330756957
+            },
+            {
+              "p": 0.8500000000000001,
+              "share": 0.3586591850835982
+            },
+            {
+              "p": 0.9,
+              "share": 0.4312382720959316
+            },
+            {
+              "p": 0.9500000000000001,
+              "share": 0.5472443714839484
+            },
+            {
+              "p": 1.0,
+              "share": 1.0
+            }
+          ],
+          "disposable": [
+            {
+              "p": 0.0,
+              "share": 0.0
+            },
+            {
+              "p": 0.05,
+              "share": 0.006660894529577846
+            },
+            {
+              "p": 0.1,
+              "share": 0.015491159890717204
+            },
+            {
+              "p": 0.15000000000000002,
+              "share": 0.025825965466496997
+            },
+            {
+              "p": 0.2,
+              "share": 0.03745624759987091
+            },
+            {
+              "p": 0.25,
+              "share": 0.050404023829826575
+            },
+            {
+              "p": 0.30000000000000004,
+              "share": 0.06469600032499695
+            },
+            {
+              "p": 0.35000000000000003,
+              "share": 0.08040598113670634
+            },
+            {
+              "p": 0.4,
+              "share": 0.09769428498821155
+            },
+            {
+              "p": 0.45,
+              "share": 0.11668895875490891
+            },
+            {
+              "p": 0.5,
+              "share": 0.1376211994740498
+            },
+            {
+              "p": 0.55,
+              "share": 0.16081262745752467
+            },
+            {
+              "p": 0.6000000000000001,
+              "share": 0.1866724735049012
+            },
+            {
+              "p": 0.65,
+              "share": 0.21579454477969237
+            },
+            {
+              "p": 0.7000000000000001,
+              "share": 0.24900192001913568
+            },
+            {
+              "p": 0.75,
+              "share": 0.2875229762680847
+            },
+            {
+              "p": 0.8,
+              "share": 0.33336466190636754
+            },
+            {
+              "p": 0.8500000000000001,
+              "share": 0.39010779957606206
+            },
+            {
+              "p": 0.9,
+              "share": 0.4660166141805951
+            },
+            {
+              "p": 0.9500000000000001,
+              "share": 0.5844193225965356
+            },
+            {
+              "p": 1.0,
+              "share": 1.0
+            }
+          ]
+        },
+        "transfers": [
+          {
+            "id": "farmer_support",
+            "name": "Farmer income support (PM-KISAN style)",
+            "beneficiary_households": 54102938.14895054,
+            "spending": 341702767256.5298,
+            "received": 324617628893.70325,
+            "capture_rate": 0.7148735632183909
+          },
+          {
+            "id": "food_subsidy",
+            "name": "Food subsidy (PDS style, cash value)",
+            "beneficiary_households": 136848908.95408034,
+            "spending": 1448988447749.086,
+            "received": 1231640180586.723,
+            "capture_rate": 0.5739315625546807
+          }
+        ],
+        "versus_baseline": {
+          "mean_gain_pc": -238.2117747763124,
+          "better_off": 0.9329225635715108,
+          "worse_off": 0.06707743642848925,
+          "pareto_sets": false,
+          "pareto_households": false,
+          "losing_sets": [
+            "Urban formal salaried, upper-middle",
+            "Urban professionals & business owners",
+            "Top 0.1% (business & capital income)"
+          ],
+          "sets": [
+            {
+              "id": "rural_landless",
+              "name": "Rural landless casual labour",
+              "gain_pc": 1890.0685665847134,
+              "gain_pct": 0.06560292561305237,
+              "better_off": 1.0,
+              "worse_off": 0.0
+            },
+            {
+              "id": "rural_marginal_farmers",
+              "name": "Rural marginal & small farmers",
+              "gain_pc": 1807.2006224526529,
+              "gain_pct": 0.051358843945239756,
+              "better_off": 1.0,
+              "worse_off": 0.0
+            },
+            {
+              "id": "rural_large_farmers",
+              "name": "Rural large farmers",
+              "gain_pc": 1651.7975598243256,
+              "gain_pct": 0.01241817290360724,
+              "better_off": 1.0,
+              "worse_off": 0.0
+            },
+            {
+              "id": "rural_nonfarm_self",
+              "name": "Rural non-farm self-employed",
+              "gain_pc": 1879.9185111574695,
+              "gain_pct": 0.039737465196196496,
+              "better_off": 1.0,
+              "worse_off": 0.0
+            },
+            {
+              "id": "rural_salaried",
+              "name": "Rural salaried workers",
+              "gain_pc": 1769.03787380863,
+              "gain_pct": 0.01900514649060716,
+              "better_off": 0.9793333333333332,
+              "worse_off": 0.020666666666666663
+            },
+            {
+              "id": "semi_urban_informal",
+              "name": "Semi-urban informal workers",
+              "gain_pc": 1958.0855681168766,
+              "gain_pct": 0.03686949301870701,
+              "better_off": 1.0,
+              "worse_off": 0.0
+            },
+            {
+              "id": "semi_urban_traders",
+              "name": "Semi-urban traders & MSME owners",
+              "gain_pc": 1650.9028219288148,
+              "gain_pct": 0.014722074688494584,
+              "better_off": 0.97,
+              "worse_off": 0.029999999999999995
+            },
+            {
+              "id": "urban_informal",
+              "name": "Urban informal & casual workers",
+              "gain_pc": 2047.3740897199195,
+              "gain_pct": 0.034136742281010345,
+              "better_off": 1.0,
+              "worse_off": 0.0
+            },
+            {
+              "id": "urban_formal_lower",
+              "name": "Urban formal salaried, lower-middle",
+              "gain_pc": 874.414091224296,
+              "gain_pct": 0.0067611779364204145,
+              "better_off": 0.9106666666666667,
+              "worse_off": 0.08933333333333335
+            },
+            {
+              "id": "urban_formal_middle",
+              "name": "Urban formal salaried, upper-middle",
+              "gain_pc": -19202.530957782972,
+              "gain_pct": -0.0575088209055918,
+              "better_off": 0.3153333333333333,
+              "worse_off": 0.6846666666666668
+            },
+            {
+              "id": "urban_professionals",
+              "name": "Urban professionals & business owners",
+              "gain_pc": -31426.011211083303,
+              "gain_pct": -0.03739118687095103,
+              "better_off": 0.2693333333333332,
+              "worse_off": 0.7306666666666667
+            },
+            {
+              "id": "top_elite",
+              "name": "Top 0.1% (business & capital income)",
+              "gain_pc": -52107.37628299312,
+              "gain_pct": -0.006630393918387005,
+              "better_off": 0.162,
+              "worse_off": 0.838
+            }
+          ]
+        }
+      },
+      "history": [
+        {
+          "period": 0,
+          "net_revenue": 12250556757656.498,
+          "gini_disposable": 0.6110715089270014,
+          "benefit_capture_rate": 0.4709205949962289,
+          "evader_share_of_formal": 0.40251516633194173,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.314957692179882,
+          "aware_deductions": 0.2299787046366579,
+          "aware_transfers": 0.4948515022727067
+        },
+        {
+          "period": 1,
+          "net_revenue": 12141416185959.389,
+          "gini_disposable": 0.610881048187173,
+          "benefit_capture_rate": 0.4993256934946646,
+          "evader_share_of_formal": 0.39095010510543043,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.3352620076987168,
+          "aware_deductions": 0.24818554351633082,
+          "aware_transfers": 0.5296585258165349
+        },
+        {
+          "period": 2,
+          "net_revenue": 12045973664616.94,
+          "gini_disposable": 0.6106854141572402,
+          "benefit_capture_rate": 0.5257288520364283,
+          "evader_share_of_formal": 0.3815808647275903,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.3552694270434991,
+          "aware_deductions": 0.26543282233545146,
+          "aware_transfers": 0.5634666976523361
+        },
+        {
+          "period": 3,
+          "net_revenue": 11955830445397.19,
+          "gini_disposable": 0.6105236860588676,
+          "benefit_capture_rate": 0.5495987910380077,
+          "evader_share_of_formal": 0.37320547210743676,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.3786311051297007,
+          "aware_deductions": 0.2840924344024389,
+          "aware_transfers": 0.5959398637708546
+        },
+        {
+          "period": 4,
+          "net_revenue": 11871361508832.654,
+          "gini_disposable": 0.6103401114386018,
+          "benefit_capture_rate": 0.5733693059820795,
+          "evader_share_of_formal": 0.3630517088249521,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.402037334535609,
+          "aware_deductions": 0.30370389515396606,
+          "aware_transfers": 0.627604070284979
+        },
+        {
+          "period": 5,
+          "net_revenue": 11789202372942.729,
+          "gini_disposable": 0.6101717016936695,
+          "benefit_capture_rate": 0.5967881441612447,
+          "evader_share_of_formal": 0.3560734069591057,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.42453433097341814,
+          "aware_deductions": 0.32687534998545686,
+          "aware_transfers": 0.6594978167888164
+        }
+      ],
+      "full_information": {
+        "ede_utility_pc": 56672.01654207167,
+        "gini_disposable": 0.6085856434679234,
+        "net_revenue": 11047226126022.064,
+        "benefit_capture_rate": 0.8067961078773488,
+        "sets": [
+          {
+            "id": "rural_landless",
+            "utility_pc": 31009.06175937214
+          },
+          {
+            "id": "rural_marginal_farmers",
+            "utility_pc": 37331.526376841844
+          },
+          {
+            "id": "rural_large_farmers",
+            "utility_pc": 134711.04096436244
+          },
+          {
+            "id": "rural_nonfarm_self",
+            "utility_pc": 49585.201381794126
+          },
+          {
+            "id": "rural_salaried",
+            "utility_pc": 94977.29273360266
+          },
+          {
+            "id": "semi_urban_informal",
+            "utility_pc": 55473.85826042236
+          },
+          {
+            "id": "semi_urban_traders",
+            "utility_pc": 113823.14315496304
+          },
+          {
+            "id": "urban_informal",
+            "utility_pc": 62525.50386259213
+          },
+          {
+            "id": "urban_formal_lower",
+            "utility_pc": 130664.1395675596
+          },
+          {
+            "id": "urban_formal_middle",
+            "utility_pc": 315558.9438132015
+          },
+          {
+            "id": "urban_professionals",
+            "utility_pc": 809408.7873762372
+          },
+          {
+            "id": "top_elite",
+            "utility_pc": 7806758.465532547
+          }
+        ]
+      }
+    },
+    {
+      "policy_id": "flat_ubi",
+      "policy_name": "Flat 15% above ₹3 lakh + universal basic income",
+      "origin": "user",
+      "is_baseline": false,
+      "balancing_lump_sum": -2019.0402055305046,
+      "report": {
+        "summary": {
+          "revenue": {
+            "income_tax": 8687257643733.564,
+            "penalties": 142484998757.45132,
+            "gst": 6364611158464.635,
+            "wealth_tax": 0.0,
+            "transfer_spending": 4069284063571.2227,
+            "transfers_received": 3947205541664.086,
+            "lump_sum": -664130557342.7168,
+            "gross": 15194353800955.65,
+            "leakage": 122078521907.13672,
+            "net": 11789200294727.145
+          },
+          "equality": {
+            "gini_pretax": 0.6538359491923837,
+            "gini_disposable": 0.6295212851967964,
+            "theil": {
+              "total": 1.198263042607804,
+              "within": 0.24075073512400572,
+              "between": 0.9575123074837983
+            },
+            "atkinson": 0.5052065050263705,
+            "top1": 0.2570191238242069,
+            "top10": 0.556882011366703,
+            "bottom50": 0.12989857753124928,
+            "palma": 6.062592334684405,
+            "poverty_headcount": 0.2818317800023012,
+            "poverty_gap": 0.07882917107033123
+          },
+          "equity": {
+            "kakwani": 0.19807045151235603,
+            "reynolds_smith": 0.02431466399558735,
+            "effective_tax_rate": 0.060707540038336255
+          },
+          "efficiency": {
+            "output": 196207568435690.56,
+            "potential_output": 202348966495818.16,
+            "output_loss_share": 0.030350528428592316,
+            "excess_burden": 895992319496.3652
+          },
+          "welfare": {
+            "mean_utility_pc": 101964.651157935,
+            "ede_utility_pc": 55034.50345711406,
+            "mean_disposable_pc": 131626.4416827897,
+            "inequality_aversion": 1.0
+          },
+          "compliance": {
+            "formal_share": 0.22567322517546884,
+            "evader_share_of_formal": 0.6677221397758504,
+            "tax_gap_share": 0.2908003677876701,
+            "audit_prob": 0.02,
+            "equilibrium_iterations": 1,
+            "equilibrium_converged": true
+          },
+          "information": {
+            "benefit_capture_rate": 1.0,
+            "unclaimed_benefits": 0.0,
+            "extra_tax_from_unawareness": 0.0,
+            "statutory_liability": 12249382612669.848,
+            "awareness": {
+              "rebate": 0.42453433097341814,
+              "deductions": 0.32687534998545686,
+              "transfers": 0.6594978167888164
+            }
+          },
+          "taxpayers": 70261185.31868182
+        },
+        "sets": [
+          {
+            "id": "rural_landless",
+            "name": "Rural landless casual labour",
+            "population": 250000000.00000003,
+            "households": 54347826.086956516,
+            "pretax_pc": 31262.448685166066,
+            "disposable_pc": 33432.222553529005,
+            "utility_pc": 30024.014592267493,
+            "income_tax_pc": 0.0,
+            "gst_pc": 566.1671717009572,
+            "transfers_pc": 2608.695652173912,
+            "net_tax_pc": -1603.6066966619765,
+            "effective_tax_rate": -0.05129498053115982,
+            "formal_share": 0.018000000000000002,
+            "evader_share": 0.0,
+            "benefit_capture": 1.0,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.6553333333333332,
+            "gini": 0.23327506799503517
+          },
+          {
+            "id": "rural_marginal_farmers",
+            "name": "Rural marginal & small farmers",
+            "population": 280000000.00000006,
+            "households": 58333333.33333333,
+            "pretax_pc": 37759.8381600028,
+            "disposable_pc": 39839.20478385061,
+            "utility_pc": 35651.25887372893,
+            "income_tax_pc": 0.0,
+            "gst_pc": 755.2333501214247,
+            "transfers_pc": 2499.9999999999995,
+            "net_tax_pc": -1324.1332737263865,
+            "effective_tax_rate": -0.03506723911568503,
+            "formal_share": 0.034,
+            "evader_share": 0.0,
+            "benefit_capture": 1.0,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.5139999999999999,
+            "gini": 0.2617018215634035
+          },
+          {
+            "id": "rural_large_farmers",
+            "name": "Rural large farmers",
+            "population": 35000000.00000001,
+            "households": 6730769.23076923,
+            "pretax_pc": 156763.89588750227,
+            "disposable_pc": 158682.45028830974,
+            "utility_pc": 134011.9989981238,
+            "income_tax_pc": 0.0,
+            "gst_pc": 4222.986609207373,
+            "transfers_pc": 2307.692307692307,
+            "net_tax_pc": 2304.432208399922,
+            "effective_tax_rate": 0.01470001874700563,
+            "formal_share": 0.14200000000000004,
+            "evader_share": 0.002666666666666667,
+            "benefit_capture": 1.0,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.04066666666666666,
+            "gini": 0.4099166989730695
+          },
+          {
+            "id": "rural_nonfarm_self",
+            "name": "Rural non-farm self-employed",
+            "population": 170000000.0,
+            "households": 36956521.73913044,
+            "pretax_pc": 57207.44080247733,
+            "disposable_pc": 59376.6110834102,
+            "utility_pc": 48571.36628430246,
+            "income_tax_pc": 0.0,
+            "gst_pc": 1273.2358119508856,
+            "transfers_pc": 2608.695652173913,
+            "net_tax_pc": -895.934468981988,
+            "effective_tax_rate": -0.015661152752408918,
+            "formal_share": 0.04666666666666667,
+            "evader_share": 0.004,
+            "benefit_capture": 1.0,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.282,
+            "gini": 0.31603784304952354
+          },
+          {
+            "id": "rural_salaried",
+            "name": "Rural salaried workers",
+            "population": 80000000.0,
+            "households": 18604651.1627907,
+            "pretax_pc": 109813.95068835633,
+            "disposable_pc": 111175.73542958757,
+            "utility_pc": 94177.60327709952,
+            "income_tax_pc": 934.3667093105969,
+            "gst_pc": 3363.371631561552,
+            "transfers_pc": 2790.6976744186045,
+            "net_tax_pc": 2001.586890330314,
+            "effective_tax_rate": 0.018227072951875357,
+            "formal_share": 0.5273333333333333,
+            "evader_share": 0.21999999999999997,
+            "benefit_capture": 1.0,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.016666666666666666,
+            "gini": 0.2626031515455891
+          },
+          {
+            "id": "semi_urban_informal",
+            "name": "Semi-urban informal workers",
+            "population": 160000000.0,
+            "households": 36363636.36363636,
+            "pretax_pc": 61836.50296656946,
+            "disposable_pc": 64103.214523425406,
+            "utility_pc": 54429.848694240274,
+            "income_tax_pc": 0.0,
+            "gst_pc": 1613.3332273666615,
+            "transfers_pc": 2727.272727272728,
+            "net_tax_pc": -653.3783294892917,
+            "effective_tax_rate": -0.01056622380218568,
+            "formal_share": 0.08066666666666666,
+            "evader_share": 0.008,
+            "benefit_capture": 1.0,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.168,
+            "gini": 0.26688547496244397
+          },
+          {
+            "id": "semi_urban_traders",
+            "name": "Semi-urban traders & MSME owners",
+            "population": 80000000.0,
+            "households": 17777777.777777776,
+            "pretax_pc": 151024.82139764694,
+            "disposable_pc": 152965.81980882978,
+            "utility_pc": 113901.70224994571,
+            "income_tax_pc": 177.6453955719325,
+            "gst_pc": 5370.138816641969,
+            "transfers_pc": 2666.666666666667,
+            "net_tax_pc": 3429.140405459111,
+            "effective_tax_rate": 0.02270580672583758,
+            "formal_share": 0.31,
+            "evader_share": 0.15666666666666665,
+            "benefit_capture": 1.0,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.06266666666666668,
+            "gini": 0.4378250505383434
+          },
+          {
+            "id": "urban_informal",
+            "name": "Urban informal & casual workers",
+            "population": 160000000.0000001,
+            "households": 38095238.0952381,
+            "pretax_pc": 70156.37305622622,
+            "disposable_pc": 72530.81249072214,
+            "utility_pc": 61424.57346050524,
+            "income_tax_pc": 0.0,
+            "gst_pc": 1961.9615289801472,
+            "transfers_pc": 2857.142857142856,
+            "net_tax_pc": -412.4779055157646,
+            "effective_tax_rate": -0.005879407494244147,
+            "formal_share": 0.10066666666666667,
+            "evader_share": 0.008,
+            "benefit_capture": 1.0,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.11133333333333328,
+            "gini": 0.26733645451649124
+          },
+          {
+            "id": "urban_formal_lower",
+            "name": "Urban formal salaried, lower-middle",
+            "population": 114999999.99999999,
+            "households": 29487179.487179488,
+            "pretax_pc": 154906.7344918904,
+            "disposable_pc": 152187.00121104743,
+            "utility_pc": 126619.98940774622,
+            "income_tax_pc": 5213.968099640114,
+            "gst_pc": 6264.246271458733,
+            "transfers_pc": 3076.9230769230785,
+            "net_tax_pc": 8983.979552301711,
+            "effective_tax_rate": 0.05799605537983912,
+            "formal_share": 0.8500000000000001,
+            "evader_share": 0.6186666666666667,
+            "benefit_capture": 1.0,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.0006666666666666668,
+            "gini": 0.22854993366169185
+          },
+          {
+            "id": "urban_formal_middle",
+            "name": "Urban formal salaried, upper-middle",
+            "population": 85000000.0,
+            "households": 22972972.972972974,
+            "pretax_pc": 441705.7641906524,
+            "disposable_pc": 405642.9303122557,
+            "utility_pc": 311181.656876118,
+            "income_tax_pc": 38513.702437131156,
+            "gst_pc": 18470.478198265515,
+            "transfers_pc": 3243.2432432432415,
+            "net_tax_pc": 54533.3120766622,
+            "effective_tax_rate": 0.1234607209090532,
+            "formal_share": 0.9446666666666665,
+            "evader_share": 0.9353333333333331,
+            "benefit_capture": 1.0,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.0,
+            "gini": 0.26375612646970337
+          },
+          {
+            "id": "urban_professionals",
+            "name": "Urban professionals & business owners",
+            "population": 32000000.000000004,
+            "households": 8888888.888888888,
+            "pretax_pc": 1309365.0956230017,
+            "disposable_pc": 1229392.4755162909,
+            "utility_pc": 849124.5119673192,
+            "income_tax_pc": 80676.94363998351,
+            "gst_pc": 48379.19606709298,
+            "transfers_pc": 3333.3333333333335,
+            "net_tax_pc": 128351.81617380382,
+            "effective_tax_rate": 0.09802599489085467,
+            "formal_share": 0.7693333333333334,
+            "evader_share": 0.7686666666666667,
+            "benefit_capture": 1.0,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.0,
+            "gini": 0.40912323929115413
+          },
+          {
+            "id": "top_elite",
+            "name": "Top 0.1% (business & capital income)",
+            "population": 1500000.0,
+            "households": 375000.0,
+            "pretax_pc": 15574860.582585353,
+            "disposable_pc": 14123650.654479593,
+            "utility_pc": 9262075.233369445,
+            "income_tax_pc": 1428908.9601658187,
+            "gst_pc": 358738.7793749452,
+            "transfers_pc": 3000.0,
+            "net_tax_pc": 1809948.7074807037,
+            "effective_tax_rate": 0.11620962498402414,
+            "formal_share": 0.866,
+            "evader_share": 0.866,
+            "benefit_capture": 1.0,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.0,
+            "gini": 0.4377240755024713
+          }
+        ],
+        "bands": [
+          {
+            "band": "P0–10",
+            "income_tax": 0.0,
+            "gst": 0.024498457852012066,
+            "wealth_tax": 0.0,
+            "transfers": -0.12806609520578094,
+            "net": -0.10356763735376887
+          },
+          {
+            "band": "P10–20",
+            "income_tax": 0.0,
+            "gst": 0.023408115610882074,
+            "wealth_tax": 0.0,
+            "transfers": -0.08656166283107505,
+            "net": -0.06315354722019298
+          },
+          {
+            "band": "P20–30",
+            "income_tax": 0.0,
+            "gst": 0.023382615471681453,
+            "wealth_tax": 0.0,
+            "transfers": -0.0684846825810912,
+            "net": -0.045102067109409734
+          },
+          {
+            "band": "P30–40",
+            "income_tax": 0.0,
+            "gst": 0.02400606211765744,
+            "wealth_tax": 0.0,
+            "transfers": -0.05601824888955509,
+            "net": -0.03201218677189765
+          },
+          {
+            "band": "P40–50",
+            "income_tax": 0.0,
+            "gst": 0.02489223082446365,
+            "wealth_tax": 0.0,
+            "transfers": -0.046050806922350515,
+            "net": -0.021158576097886864
+          },
+          {
+            "band": "P50–60",
+            "income_tax": 0.0,
+            "gst": 0.026255115315287306,
+            "wealth_tax": 0.0,
+            "transfers": -0.03745118840164119,
+            "net": -0.011196073086353887
+          },
+          {
+            "band": "P60–70",
+            "income_tax": 0.0,
+            "gst": 0.028294917378166116,
+            "wealth_tax": 0.0,
+            "transfers": -0.029583517123627306,
+            "net": -0.0012885997454611924
+          },
+          {
+            "band": "P70–80",
+            "income_tax": 0.00018071244641047502,
+            "gst": 0.03138601707145177,
+            "wealth_tax": 0.0,
+            "transfers": -0.022126013207255723,
+            "net": 0.009440716310606525
+          },
+          {
+            "band": "P80–90",
+            "income_tax": 0.017343907779966222,
+            "gst": 0.0349539071094865,
+            "wealth_tax": 0.0,
+            "transfers": -0.014441164490050454,
+            "net": 0.037856650399402274
+          },
+          {
+            "band": "P90–99",
+            "income_tax": 0.06997016005986685,
+            "gst": 0.039556186904766186,
+            "wealth_tax": 0.0,
+            "transfers": -0.005547083453912355,
+            "net": 0.10397926351072069
+          },
+          {
+            "band": "P99–100",
+            "income_tax": 0.07791647783679742,
+            "gst": 0.028919400527342144,
+            "wealth_tax": 0.0,
+            "transfers": -0.0007405683582171485,
+            "net": 0.10609531000592241
+          }
+        ],
+        "lorenz": {
+          "pretax": [
+            {
+              "p": 0.0,
+              "share": 0.0
+            },
+            {
+              "p": 0.05,
+              "share": 0.005172924351206504
+            },
+            {
+              "p": 0.1,
+              "share": 0.012360130554955509
+            },
+            {
+              "p": 0.15000000000000002,
+              "share": 0.020923968311321848
+            },
+            {
+              "p": 0.2,
+              "share": 0.030738112823709605
+            },
+            {
+              "p": 0.25,
+              "share": 0.04178244419752723
+            },
+            {
+              "p": 0.30000000000000004,
+              "share": 0.05409512358914299
+            },
+            {
+              "p": 0.35000000000000003,
+              "share": 0.0677532019978301
+            },
+            {
+              "p": 0.4,
+              "share": 0.08287384718091946
+            },
+            {
+              "p": 0.45,
+              "share": 0.09962130429129017
+            },
+            {
+              "p": 0.5,
+              "share": 0.11821373913550046
+            },
+            {
+              "p": 0.55,
+              "share": 0.13894376595682195
+            },
+            {
+              "p": 0.6000000000000001,
+              "share": 0.16220793011915688
+            },
+            {
+              "p": 0.65,
+              "share": 0.18855383313994156
+            },
+            {
+              "p": 0.7000000000000001,
+              "share": 0.2187644280343211
+            },
+            {
+              "p": 0.75,
+              "share": 0.2539893464546271
+            },
+            {
+              "p": 0.8,
+              "share": 0.29598159343845826
+            },
+            {
+              "p": 0.8500000000000001,
+              "share": 0.34809880776948704
+            },
+            {
+              "p": 0.9,
+              "share": 0.417993548051071
+            },
+            {
+              "p": 0.9500000000000001,
+              "share": 0.5318244353389062
+            },
+            {
+              "p": 1.0,
+              "share": 1.0
+            }
+          ],
+          "disposable": [
+            {
+              "p": 0.0,
+              "share": 0.0
+            },
+            {
+              "p": 0.05,
+              "share": 0.006136645038200794
+            },
+            {
+              "p": 0.1,
+              "share": 0.014348430279109233
+            },
+            {
+              "p": 0.15000000000000002,
+              "share": 0.023978705962749352
+            },
+            {
+              "p": 0.2,
+              "share": 0.03489794404356816
+            },
+            {
+              "p": 0.25,
+              "share": 0.04708529793740061
+            },
+            {
+              "p": 0.30000000000000004,
+              "share": 0.06058056322275421
+            },
+            {
+              "p": 0.35000000000000003,
+              "share": 0.07546368798626096
+            },
+            {
+              "p": 0.4,
+              "share": 0.09185542761645908
+            },
+            {
+              "p": 0.45,
+              "share": 0.1099253282223104
+            },
+            {
+              "p": 0.5,
+              "share": 0.12989857753124928
+            },
+            {
+              "p": 0.55,
+              "share": 0.15207657367285052
+            },
+            {
+              "p": 0.6000000000000001,
+              "share": 0.1768681651710814
+            },
+            {
+              "p": 0.65,
+              "share": 0.20483790827525047
+            },
+            {
+              "p": 0.7000000000000001,
+              "share": 0.23679180827803645
+            },
+            {
+              "p": 0.75,
+              "share": 0.27391464409841726
+            },
+            {
+              "p": 0.8,
+              "share": 0.31799903950101194
+            },
+            {
+              "p": 0.8500000000000001,
+              "share": 0.3720880055742541
+            },
+            {
+              "p": 0.9,
+              "share": 0.44311798863329704
+            },
+            {
+              "p": 0.9500000000000001,
+              "share": 0.5546525701460576
+            },
+            {
+              "p": 1.0,
+              "share": 1.0
+            }
+          ]
+        },
+        "transfers": [
+          {
+            "id": "ubi",
+            "name": "Universal basic income",
+            "beneficiary_households": 328933795.1386738,
+            "spending": 4069284063571.2227,
+            "received": 3947205541664.086,
+            "capture_rate": 1.0
+          }
+        ],
+        "versus_baseline": {
+          "mean_gain_pc": 1031.0910626929153,
+          "better_off": 0.772037970314118,
+          "worse_off": 0.22790910136923256,
+          "pareto_sets": false,
+          "pareto_households": false,
+          "losing_sets": [
+            "Urban formal salaried, lower-middle",
+            "Urban formal salaried, upper-middle"
+          ],
+          "sets": [
+            {
+              "id": "rural_landless",
+              "name": "Rural landless casual labour",
+              "gain_pc": 1213.2786544686342,
+              "gain_pct": 0.04211203271891598,
+              "better_off": 0.9846666666666666,
+              "worse_off": 0.01533333333333333
+            },
+            {
+              "id": "rural_marginal_farmers",
+              "name": "Rural marginal & small farmers",
+              "gain_pc": 463.53883120731825,
+              "gain_pct": 0.013173312469440127,
+              "better_off": 0.43533333333333324,
+              "worse_off": 0.5646666666666667
+            },
+            {
+              "id": "rural_large_farmers",
+              "name": "Rural large farmers",
+              "gain_pc": 997.4587234824363,
+              "gain_pct": 0.00749886983350043,
+              "better_off": 0.934,
+              "worse_off": 0.06599999999999999
+            },
+            {
+              "id": "rural_nonfarm_self",
+              "name": "Rural non-farm self-employed",
+              "gain_pc": 1262.9005360290305,
+              "gain_pct": 0.026695022044233623,
+              "better_off": 0.988,
+              "worse_off": 0.012
+            },
+            {
+              "id": "rural_salaried",
+              "name": "Rural salaried workers",
+              "gain_pc": 1095.559701011607,
+              "gain_pct": 0.011769828625604523,
+              "better_off": 0.888,
+              "worse_off": 0.112
+            },
+            {
+              "id": "semi_urban_informal",
+              "name": "Semi-urban informal workers",
+              "gain_pc": 1321.2917872230269,
+              "gain_pct": 0.024879075316174597,
+              "better_off": 0.988,
+              "worse_off": 0.012
+            },
+            {
+              "id": "semi_urban_traders",
+              "name": "Semi-urban traders & MSME owners",
+              "gain_pc": 1763.7830462747434,
+              "gain_pct": 0.01572869426149477,
+              "better_off": 0.9779999999999998,
+              "worse_off": 0.022
+            },
+            {
+              "id": "urban_informal",
+              "name": "Urban informal & casual workers",
+              "gain_pc": 1448.9005369985116,
+              "gain_pct": 0.024158137230847688,
+              "better_off": 0.9826666666666666,
+              "worse_off": 0.01733333333333333
+            },
+            {
+              "id": "urban_formal_lower",
+              "name": "Urban formal salaried, lower-middle",
+              "gain_pc": -2708.67187686404,
+              "gain_pct": -0.02094409584046598,
+              "better_off": 0.5553333333333335,
+              "worse_off": 0.4440000000000001
+            },
+            {
+              "id": "urban_formal_middle",
+              "name": "Urban formal salaried, upper-middle",
+              "gain_pc": -22724.179748604714,
+              "gain_pct": -0.06805565298981119,
+              "better_off": 0.094,
+              "worse_off": 0.906
+            },
+            {
+              "id": "urban_professionals",
+              "name": "Urban professionals & business owners",
+              "gain_pc": 8658.780843444134,
+              "gain_pct": 0.010302360373296324,
+              "better_off": 0.36399999999999993,
+              "worse_off": 0.6359999999999999
+            },
+            {
+              "id": "top_elite",
+              "name": "Top 0.1% (business & capital income)",
+              "gain_pc": 1403209.3915539053,
+              "gain_pct": 0.17855113190604344,
+              "better_off": 0.9993333333333333,
+              "worse_off": 0.0006666666666666666
+            }
+          ]
+        }
+      },
+      "history": [
+        {
+          "period": 0,
+          "net_revenue": 11753430454340.86,
+          "gini_disposable": 0.6295105598652561,
+          "benefit_capture_rate": 1.0,
+          "evader_share_of_formal": 0.6672150060768093,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.314957692179882,
+          "aware_deductions": 0.2299787046366579,
+          "aware_transfers": 0.4948515022727067
+        },
+        {
+          "period": 1,
+          "net_revenue": 11762655337834.264,
+          "gini_disposable": 0.6295137068822653,
+          "benefit_capture_rate": 1.0,
+          "evader_share_of_formal": 0.6673600593106617,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.3352620076987168,
+          "aware_deductions": 0.24818554351633082,
+          "aware_transfers": 0.5296585258165349
+        },
+        {
+          "period": 2,
+          "net_revenue": 11772714088975.734,
+          "gini_disposable": 0.6295167891538107,
+          "benefit_capture_rate": 1.0,
+          "evader_share_of_formal": 0.6675049861489493,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.3552694270434991,
+          "aware_deductions": 0.26543282233545146,
+          "aware_transfers": 0.5634666976523361
+        },
+        {
+          "period": 3,
+          "net_revenue": 11783482851667.916,
+          "gini_disposable": 0.6295198080777284,
+          "benefit_capture_rate": 1.0,
+          "evader_share_of_formal": 0.6676497867568069,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.3786311051297007,
+          "aware_deductions": 0.2840924344024389,
+          "aware_transfers": 0.5959398637708546
+        },
+        {
+          "period": 4,
+          "net_revenue": 11787251471295.06,
+          "gini_disposable": 0.6295207970790756,
+          "benefit_capture_rate": 1.0,
+          "evader_share_of_formal": 0.6676980256033865,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.402037334535609,
+          "aware_deductions": 0.30370389515396606,
+          "aware_transfers": 0.627604070284979
+        },
+        {
+          "period": 5,
+          "net_revenue": 11789200294727.145,
+          "gini_disposable": 0.6295212851967964,
+          "benefit_capture_rate": 1.0,
+          "evader_share_of_formal": 0.6677221397758504,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.42453433097341814,
+          "aware_deductions": 0.32687534998545686,
+          "aware_transfers": 0.6594978167888164
+        }
+      ],
+      "full_information": {
+        "ede_utility_pc": 55037.44197075352,
+        "gini_disposable": 0.6294654988598967,
+        "net_revenue": 11780310166212.125,
+        "benefit_capture_rate": 1.0,
+        "sets": [
+          {
+            "id": "rural_landless",
+            "utility_pc": 30024.014592267493
+          },
+          {
+            "id": "rural_marginal_farmers",
+            "utility_pc": 35651.25887372893
+          },
+          {
+            "id": "rural_large_farmers",
+            "utility_pc": 134011.9989981238
+          },
+          {
+            "id": "rural_nonfarm_self",
+            "utility_pc": 48570.57587820398
+          },
+          {
+            "id": "rural_salaried",
+            "utility_pc": 94177.60327709952
+          },
+          {
+            "id": "semi_urban_informal",
+            "utility_pc": 54428.43656743048
+          },
+          {
+            "id": "semi_urban_traders",
+            "utility_pc": 113901.70224994571
+          },
+          {
+            "id": "urban_informal",
+            "utility_pc": 61423.15100994469
+          },
+          {
+            "id": "urban_formal_lower",
+            "utility_pc": 126708.44451629891
+          },
+          {
+            "id": "urban_formal_middle",
+            "utility_pc": 311181.656876118
+          },
+          {
+            "id": "urban_professionals",
+            "utility_pc": 849329.1361071164
+          },
+          {
+            "id": "top_elite",
+            "utility_pc": 9262075.233369445
+          }
+        ]
+      }
+    },
+    {
+      "policy_id": "status_quo_auto_enrol",
+      "policy_name": "Status quo + automatic rebate and auto-enrolment",
+      "origin": "user",
+      "is_baseline": false,
+      "balancing_lump_sum": -1877.7897227983542,
+      "report": {
+        "summary": {
+          "revenue": {
+            "income_tax": 6978947258018.864,
+            "penalties": 270314365330.47214,
+            "gst": 6300824461199.986,
+            "wealth_tax": 0.0,
+            "transfer_spending": 2378554262802.706,
+            "transfers_received": 2061800239514.1606,
+            "lump_sum": -617668499992.4609,
+            "gross": 13550086084549.322,
+            "leakage": 316754023288.5454,
+            "net": 11789200321739.078
+          },
+          "equality": {
+            "gini_pretax": 0.6464706305620684,
+            "gini_disposable": 0.6255648155549944,
+            "theil": {
+              "total": 1.0998737308323177,
+              "within": 0.22004516806951618,
+              "between": 0.8798285627628015
+            },
+            "atkinson": 0.5000596944767347,
+            "top1": 0.23098649404491767,
+            "top10": 0.551220495230395,
+            "bottom50": 0.12996684884751128,
+            "palma": 6.007902456806433,
+            "poverty_headcount": 0.29150385456219075,
+            "poverty_gap": 0.08401282022754698
+          },
+          "equity": {
+            "kakwani": 0.22155114461300318,
+            "reynolds_smith": 0.020905815007074002,
+            "effective_tax_rate": 0.06290577563002511
+          },
+          "efficiency": {
+            "output": 192445832259151.38,
+            "potential_output": 202348966495818.16,
+            "output_loss_share": 0.04894086887699245,
+            "excess_burden": 2159137632539.5664
+          },
+          "welfare": {
+            "mean_utility_pc": 101092.61433359596,
+            "ede_utility_pc": 54278.49041657755,
+            "mean_disposable_pc": 128851.01993463842,
+            "inequality_aversion": 1.0
+          },
+          "compliance": {
+            "formal_share": 0.2258890806581521,
+            "evader_share_of_formal": 0.10852448528448534,
+            "tax_gap_share": 0.3922993893807608,
+            "audit_prob": 0.02,
+            "equilibrium_iterations": 1,
+            "equilibrium_converged": true
+          },
+          "information": {
+            "benefit_capture_rate": 0.8067961078773488,
+            "unclaimed_benefits": 465090767927.7244,
+            "extra_tax_from_unawareness": 0.0,
+            "statutory_liability": 11484186680193.398,
+            "awareness": {
+              "rebate": 0.7057627220126708,
+              "deductions": 0.6579728733313063,
+              "transfers": 0.8235618873313124
+            }
+          },
+          "taxpayers": 12046741.730191728
+        },
+        "sets": [
+          {
+            "id": "rural_landless",
+            "name": "Rural landless casual labour",
+            "population": 250000000.00000003,
+            "households": 54347826.086956516,
+            "pretax_pc": 31262.448685166066,
+            "disposable_pc": 32429.01613673164,
+            "utility_pc": 29038.294621481084,
+            "income_tax_pc": 0.0,
+            "gst_pc": 548.6807256900067,
+            "transfers_pc": 1574.7826086956516,
+            "net_tax_pc": -617.8867258755682,
+            "effective_tax_rate": -0.019764501882053583,
+            "formal_share": 0.018000000000000002,
+            "evader_share": 0.0,
+            "benefit_capture": 0.7866666666666667,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.6786666666666666,
+            "gini": 0.24129513004849645
+          },
+          {
+            "id": "rural_marginal_farmers",
+            "name": "Rural marginal & small farmers",
+            "population": 280000000.00000006,
+            "households": 58333333.33333333,
+            "pretax_pc": 37759.8381600028,
+            "disposable_pc": 39943.63196775314,
+            "utility_pc": 35753.52794085428,
+            "income_tax_pc": 0.0,
+            "gst_pc": 757.3914668986181,
+            "transfers_pc": 2574.9999999999995,
+            "net_tax_pc": -1426.4023408517244,
+            "effective_tax_rate": -0.037775647628772,
+            "formal_share": 0.034,
+            "evader_share": 0.0,
+            "benefit_capture": 0.8240000000000001,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.5119999999999999,
+            "gini": 0.260694652126624
+          },
+          {
+            "id": "rural_large_farmers",
+            "name": "Rural large farmers",
+            "population": 35000000.00000001,
+            "households": 6730769.23076923,
+            "pretax_pc": 156763.89588750227,
+            "disposable_pc": 157532.0132485026,
+            "utility_pc": 132895.20183816866,
+            "income_tax_pc": 0.0,
+            "gst_pc": 4189.346729355381,
+            "transfers_pc": 1129.2307692307688,
+            "net_tax_pc": 3421.229368355065,
+            "effective_tax_rate": 0.0218240899729248,
+            "formal_share": 0.14200000000000004,
+            "evader_share": 0.0,
+            "benefit_capture": 0.8526666666666667,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.04466666666666666,
+            "gini": 0.41298754435180096
+          },
+          {
+            "id": "rural_nonfarm_self",
+            "name": "Rural non-farm self-employed",
+            "population": 170000000.0,
+            "households": 36956521.73913044,
+            "pretax_pc": 57210.59592040725,
+            "disposable_pc": 58411.51119805978,
+            "utility_pc": 47624.88049743279,
+            "income_tax_pc": 0.0,
+            "gst_pc": 1251.5313805591168,
+            "transfers_pc": 1609.1304347826083,
+            "net_tax_pc": 50.61610290658506,
+            "effective_tax_rate": 0.0008847330130419092,
+            "formal_share": 0.04666666666666667,
+            "evader_share": 0.0,
+            "benefit_capture": 0.8046666666666668,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.2966666666666667,
+            "gini": 0.3212374974600888
+          },
+          {
+            "id": "rural_salaried",
+            "name": "Rural salaried workers",
+            "population": 80000000.0,
+            "households": 18604651.1627907,
+            "pretax_pc": 110658.93026561313,
+            "disposable_pc": 110432.1981652668,
+            "utility_pc": 92681.94462628738,
+            "income_tax_pc": 0.0,
+            "gst_pc": 3334.056079599756,
+            "transfers_pc": 211.1627906976744,
+            "net_tax_pc": 3560.7881799460997,
+            "effective_tax_rate": 0.03217804628509591,
+            "formal_share": 0.5273333333333333,
+            "evader_share": 0.0006666666666666665,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.023999999999999997,
+            "gini": 0.27676490770313267
+          },
+          {
+            "id": "semi_urban_informal",
+            "name": "Semi-urban informal workers",
+            "population": 160000000.0,
+            "households": 36363636.36363636,
+            "pretax_pc": 61843.10311520427,
+            "disposable_pc": 63084.96908729555,
+            "utility_pc": 53431.71985174187,
+            "income_tax_pc": 0.0,
+            "gst_pc": 1586.7575248748576,
+            "transfers_pc": 1668.6363636363637,
+            "net_tax_pc": 344.8915527835747,
+            "effective_tax_rate": 0.005576879804059869,
+            "formal_share": 0.08066666666666666,
+            "evader_share": 0.0,
+            "benefit_capture": 0.7980000000000002,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.18266666666666667,
+            "gini": 0.2711443547051553
+          },
+          {
+            "id": "semi_urban_traders",
+            "name": "Semi-urban traders & MSME owners",
+            "population": 80000000.0,
+            "households": 17777777.777777776,
+            "pretax_pc": 152024.97263634624,
+            "disposable_pc": 151731.9353438474,
+            "utility_pc": 111745.43346913833,
+            "income_tax_pc": 0.0,
+            "gst_pc": 5318.76213414946,
+            "transfers_pc": 166.66666666666666,
+            "net_tax_pc": 5611.799426648288,
+            "effective_tax_rate": 0.0369136683883646,
+            "formal_share": 0.31,
+            "evader_share": 0.006666666666666666,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.07599999999999998,
+            "gini": 0.4454441132598168
+          },
+          {
+            "id": "urban_informal",
+            "name": "Urban informal & casual workers",
+            "population": 160000000.0000001,
+            "households": 38095238.0952381,
+            "pretax_pc": 70164.14744688335,
+            "disposable_pc": 71474.67370335995,
+            "utility_pc": 60390.45057788368,
+            "income_tax_pc": 0.0,
+            "gst_pc": 1932.377806317558,
+            "transfers_pc": 1757.6190476190466,
+            "net_tax_pc": 621.851549840976,
+            "effective_tax_rate": 0.008862810601550298,
+            "formal_share": 0.10066666666666667,
+            "evader_share": 0.0,
+            "benefit_capture": 0.7966666666666665,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.12399999999999996,
+            "gini": 0.27118279460460937
+          },
+          {
+            "id": "urban_formal_lower",
+            "name": "Urban formal salaried, lower-middle",
+            "population": 114999999.99999999,
+            "households": 29487179.487179488,
+            "pretax_pc": 155975.37614947598,
+            "disposable_pc": 155664.92448218868,
+            "utility_pc": 128944.04260302012,
+            "income_tax_pc": 59.31213312587588,
+            "gst_pc": 6390.738552624768,
+            "transfers_pc": 233.3333333333334,
+            "net_tax_pc": 6701.190219912079,
+            "effective_tax_rate": 0.04296312908705617,
+            "formal_share": 0.8500000000000001,
+            "evader_share": 0.003333333333333334,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.0013333333333333335,
+            "gini": 0.24933673568560188
+          },
+          {
+            "id": "urban_formal_middle",
+            "name": "Urban formal salaried, upper-middle",
+            "population": 85000000.0,
+            "households": 22972972.972972974,
+            "pretax_pc": 442053.64542120066,
+            "disposable_pc": 431202.34688542207,
+            "utility_pc": 333553.4512065229,
+            "income_tax_pc": 10417.046251566464,
+            "gst_pc": 19687.309492379132,
+            "transfers_pc": 241.08108108108107,
+            "net_tax_pc": 30538.60802815763,
+            "effective_tax_rate": 0.06908348872241427,
+            "formal_share": 0.9453333333333331,
+            "evader_share": 0.16266666666666663,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.0,
+            "gini": 0.2440756120051666
+          },
+          {
+            "id": "urban_professionals",
+            "name": "Urban professionals & business owners",
+            "population": 32000000.000000004,
+            "households": 8888888.888888888,
+            "pretax_pc": 1247129.4090722743,
+            "disposable_pc": 1170500.694379743,
+            "utility_pc": 840017.7818149637,
+            "income_tax_pc": 71735.73638034472,
+            "gst_pc": 46433.40082833633,
+            "transfers_pc": 247.77777777777774,
+            "net_tax_pc": 123062.11552086739,
+            "effective_tax_rate": 0.09867629984959775,
+            "formal_share": 0.7773333333333334,
+            "evader_share": 0.5153333333333334,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.0,
+            "gini": 0.37947604352427555
+          },
+          {
+            "id": "top_elite",
+            "name": "Top 0.1% (business & capital income)",
+            "population": 1500000.0,
+            "households": 375000.0,
+            "pretax_pc": 14192790.806754624,
+            "disposable_pc": 11595528.316469219,
+            "utility_pc": 7858409.232100022,
+            "income_tax_pc": 2527422.578103472,
+            "gst_pc": 295123.34788121487,
+            "transfers_pc": 232.0,
+            "net_tax_pc": 2892385.8381666187,
+            "effective_tax_rate": 0.20379260693323795,
+            "formal_share": 0.866,
+            "evader_share": 0.866,
+            "benefit_capture": null,
+            "unaware_extra_tax_pc": 0.0,
+            "poverty_rate": 0.0,
+            "gini": 0.43349932781160283
+          }
+        ],
+        "bands": [
+          {
+            "band": "P0–10",
+            "income_tax": 0.0,
+            "gst": 0.023702466818608704,
+            "wealth_tax": 0.0,
+            "transfers": -0.0924035502640876,
+            "net": -0.0687010834454789
+          },
+          {
+            "band": "P10–20",
+            "income_tax": 0.0,
+            "gst": 0.02283045944456255,
+            "wealth_tax": 0.0,
+            "transfers": -0.061455836570159586,
+            "net": -0.038625377125597035
+          },
+          {
+            "band": "P20–30",
+            "income_tax": 0.0,
+            "gst": 0.02286855367544205,
+            "wealth_tax": 0.0,
+            "transfers": -0.0474106005613259,
+            "net": -0.02454204688588385
+          },
+          {
+            "band": "P30–40",
+            "income_tax": 0.0,
+            "gst": 0.02350769393759575,
+            "wealth_tax": 0.0,
+            "transfers": -0.03705471406544494,
+            "net": -0.013547020127849188
+          },
+          {
+            "band": "P40–50",
+            "income_tax": 0.0,
+            "gst": 0.024401631046494173,
+            "wealth_tax": 0.0,
+            "transfers": -0.028383531455267917,
+            "net": -0.003981900408773742
+          },
+          {
+            "band": "P50–60",
+            "income_tax": 0.0,
+            "gst": 0.02574691915294717,
+            "wealth_tax": 0.0,
+            "transfers": -0.020546948162699412,
+            "net": 0.005199970990247755
+          },
+          {
+            "band": "P60–70",
+            "income_tax": 0.0,
+            "gst": 0.02773113436932365,
+            "wealth_tax": 0.0,
+            "transfers": -0.011793707791182526,
+            "net": 0.015937426578141123
+          },
+          {
+            "band": "P70–80",
+            "income_tax": 0.0,
+            "gst": 0.03070662883821529,
+            "wealth_tax": 0.0,
+            "transfers": -0.005304886671327448,
+            "net": 0.025401742166887842
+          },
+          {
+            "band": "P80–90",
+            "income_tax": 0.0,
+            "gst": 0.03513457815100011,
+            "wealth_tax": 0.0,
+            "transfers": -0.0006991893715162208,
+            "net": 0.034435388779483884
+          },
+          {
+            "band": "P90–99",
+            "income_tax": 0.016365044367914187,
+            "gst": 0.0418392146194255,
+            "wealth_tax": 0.0,
+            "transfers": 0.0004437275956825389,
+            "net": 0.05864798658302222
+          },
+          {
+            "band": "P99–100",
+            "income_tax": 0.12671223229073675,
+            "gst": 0.027647033432171595,
+            "wealth_tax": 0.0,
+            "transfers": 7.339563558161801e-05,
+            "net": 0.15443266135848993
+          }
+        ],
+        "lorenz": {
+          "pretax": [
+            {
+              "p": 0.0,
+              "share": 0.0
+            },
+            {
+              "p": 0.05,
+              "share": 0.00527403943612157
+            },
+            {
+              "p": 0.1,
+              "share": 0.012601733865921023
+            },
+            {
+              "p": 0.15000000000000002,
+              "share": 0.02133296884736603
+            },
+            {
+              "p": 0.2,
+              "share": 0.03133895031470701
+            },
+            {
+              "p": 0.25,
+              "share": 0.042599165090034884
+            },
+            {
+              "p": 0.30000000000000004,
+              "share": 0.055152520265344424
+            },
+            {
+              "p": 0.35000000000000003,
+              "share": 0.069077572954788
+            },
+            {
+              "p": 0.4,
+              "share": 0.08449378119232298
+            },
+            {
+              "p": 0.45,
+              "share": 0.10156860062869244
+            },
+            {
+              "p": 0.5,
+              "share": 0.12052446155463378
+            },
+            {
+              "p": 0.55,
+              "share": 0.14165969794022054
+            },
+            {
+              "p": 0.6000000000000001,
+              "share": 0.16537860641641805
+            },
+            {
+              "p": 0.65,
+              "share": 0.19223949246039146
+            },
+            {
+              "p": 0.7000000000000001,
+              "share": 0.22304061345967477
+            },
+            {
+              "p": 0.75,
+              "share": 0.2589697559444744
+            },
+            {
+              "p": 0.8,
+              "share": 0.3019453129499813
+            },
+            {
+              "p": 0.8500000000000001,
+              "share": 0.35543291122546267
+            },
+            {
+              "p": 0.9,
+              "share": 0.42758061567682515
+            },
+            {
+              "p": 0.9500000000000001,
+              "share": 0.5468432629624052
+            },
+            {
+              "p": 1.0,
+              "share": 1.0
+            }
+          ],
+          "disposable": [
+            {
+              "p": 0.0,
+              "share": 0.0
+            },
+            {
+              "p": 0.05,
+              "share": 0.005996419402913676
+            },
+            {
+              "p": 0.1,
+              "share": 0.014143813401035253
+            },
+            {
+              "p": 0.15000000000000002,
+              "share": 0.023748881511552484
+            },
+            {
+              "p": 0.2,
+              "share": 0.03464077645237142
+            },
+            {
+              "p": 0.25,
+              "share": 0.0468417734920834
+            },
+            {
+              "p": 0.30000000000000004,
+              "share": 0.06036439076469569
+            },
+            {
+              "p": 0.35000000000000003,
+              "share": 0.07528508606874801
+            },
+            {
+              "p": 0.4,
+              "share": 0.09174924180167238
+            },
+            {
+              "p": 0.45,
+              "share": 0.1099019055714399
+            },
+            {
+              "p": 0.5,
+              "share": 0.12996684884751128
+            },
+            {
+              "p": 0.55,
+              "share": 0.1522576575758929
+            },
+            {
+              "p": 0.6000000000000001,
+              "share": 0.1771700273813306
+            },
+            {
+              "p": 0.65,
+              "share": 0.20525168126249602
+            },
+            {
+              "p": 0.7000000000000001,
+              "share": 0.23734329896223608
+            },
+            {
+              "p": 0.75,
+              "share": 0.27464756434454407
+            },
+            {
+              "p": 0.8,
+              "share": 0.31913913700391583
+            },
+            {
+              "p": 0.8500000000000001,
+              "share": 0.37438006715954725
+            },
+            {
+              "p": 0.9,
+              "share": 0.4487795047696051
+            },
+            {
+              "p": 0.9500000000000001,
+              "share": 0.5716829222764755
+            },
+            {
+              "p": 1.0,
+              "share": 1.0
+            }
+          ]
+        },
+        "transfers": [
+          {
+            "id": "farmer_support",
+            "name": "Farmer income support (PM-KISAN style)",
+            "beneficiary_households": 63379433.87544625,
+            "spending": 400291161318.6081,
+            "received": 380276603252.6776,
+            "capture_rate": 0.857448275862069
+          },
+          {
+            "id": "food_subsidy",
+            "name": "Food subsidy (PDS style, cash value)",
+            "beneficiary_households": 186835959.5846092,
+            "spending": 1978263101484.0977,
+            "received": 1681523636261.483,
+            "capture_rate": 0.7969918880139982
+          }
+        ],
+        "versus_baseline": {
+          "mean_gain_pc": 159.05423835385145,
+          "better_off": 0.3255422851225406,
+          "worse_off": 0.6744577148774594,
+          "pareto_sets": false,
+          "pareto_households": false,
+          "losing_sets": [
+            "Rural large farmers",
+            "Rural salaried workers",
+            "Semi-urban traders & MSME owners",
+            "Urban formal salaried, lower-middle",
+            "Urban formal salaried, upper-middle",
+            "Urban professionals & business owners",
+            "Top 0.1% (business & capital income)"
+          ],
+          "sets": [
+            {
+              "id": "rural_landless",
+              "name": "Rural landless casual labour",
+              "gain_pc": 227.5586836822259,
+              "gain_pct": 0.007898398852896896,
+              "better_off": 0.20333333333333328,
+              "worse_off": 0.7966666666666665
+            },
+            {
+              "id": "rural_marginal_farmers",
+              "name": "Rural marginal & small farmers",
+              "gain_pc": 565.8078983326566,
+              "gain_pct": 0.016079697623174273,
+              "better_off": 0.9953333333333335,
+              "worse_off": 0.004666666666666666
+            },
+            {
+              "id": "rural_large_farmers",
+              "name": "Rural large farmers",
+              "gain_pc": -119.33843647270827,
+              "gain_pct": -0.0008971833923291738,
+              "better_off": 0.049333333333333326,
+              "worse_off": 0.9506666666666668
+            },
+            {
+              "id": "rural_nonfarm_self",
+              "name": "Rural non-farm self-employed",
+              "gain_pc": 316.41474915935424,
+              "gain_pct": 0.006688332503594288,
+              "better_off": 0.2613333333333333,
+              "worse_off": 0.7386666666666667
+            },
+            {
+              "id": "rural_salaried",
+              "name": "Rural salaried workers",
+              "gain_pc": -400.09894980053303,
+              "gain_pct": -0.004298347290511309,
+              "better_off": 0.008,
+              "worse_off": 0.992
+            },
+            {
+              "id": "semi_urban_informal",
+              "name": "Semi-urban informal workers",
+              "gain_pc": 323.1629447246253,
+              "gain_pct": 0.006084950590738527,
+              "better_off": 0.26,
+              "worse_off": 0.74
+            },
+            {
+              "id": "semi_urban_traders",
+              "name": "Semi-urban traders & MSME owners",
+              "gain_pc": -392.4857345326135,
+              "gain_pct": -0.003500026907220917,
+              "better_off": 0.005333333333333333,
+              "worse_off": 0.9946666666666666
+            },
+            {
+              "id": "urban_informal",
+              "name": "Urban informal & casual workers",
+              "gain_pc": 414.7776543769635,
+              "gain_pct": 0.006915764911983113,
+              "better_off": 0.30599999999999994,
+              "worse_off": 0.694
+            },
+            {
+              "id": "urban_formal_lower",
+              "name": "Urban formal salaried, lower-middle",
+              "gain_pc": -384.61868159012954,
+              "gain_pct": -0.002973963217199852,
+              "better_off": 0.024000000000000004,
+              "worse_off": 0.9760000000000001
+            },
+            {
+              "id": "urban_formal_middle",
+              "name": "Urban formal salaried, upper-middle",
+              "gain_pc": -352.38541819980304,
+              "gain_pct": -0.0010553436913888078,
+              "better_off": 0.014666666666666665,
+              "worse_off": 0.9853333333333335
+            },
+            {
+              "id": "urban_professionals",
+              "name": "Urban professionals & business owners",
+              "gain_pc": -447.9493089115549,
+              "gain_pct": -0.0005329774817975681,
+              "better_off": 0.0073333333333333315,
+              "worse_off": 0.9926666666666666
+            },
+            {
+              "id": "top_elite",
+              "name": "Top 0.1% (business & capital income)",
+              "gain_pc": -456.60971551776424,
+              "gain_pct": -5.8101222836535816e-05,
+              "better_off": 0.0,
+              "worse_off": 1.0
+            }
+          ]
+        }
+      },
+      "history": [
+        {
+          "period": 0,
+          "net_revenue": 13285458801904.027,
+          "gini_disposable": 0.6224545081127764,
+          "benefit_capture_rate": 0.8067961078773488,
+          "evader_share_of_formal": 0.10794249543716795,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.314957692179882,
+          "aware_deductions": 0.2299787046366579,
+          "aware_transfers": 0.4948515022727067
+        },
+        {
+          "period": 1,
+          "net_revenue": 12537313422524.941,
+          "gini_disposable": 0.6240170246170667,
+          "benefit_capture_rate": 0.8067961078773488,
+          "evader_share_of_formal": 0.10820125137804272,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.40091914071390716,
+          "aware_deductions": 0.3233562784348238,
+          "aware_transfers": 0.578819848430843
+        },
+        {
+          "period": 2,
+          "net_revenue": 12011880076951.734,
+          "gini_disposable": 0.6251056434887916,
+          "benefit_capture_rate": 0.8067961078773488,
+          "evader_share_of_formal": 0.10839521984358261,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.4836577786278671,
+          "aware_deductions": 0.41423933685532555,
+          "aware_transfers": 0.6534986304576551
+        },
+        {
+          "period": 3,
+          "net_revenue": 11789200321739.078,
+          "gini_disposable": 0.6255648155549944,
+          "benefit_capture_rate": 0.8067961078773488,
+          "evader_share_of_formal": 0.10852448528448534,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.5653352896856857,
+          "aware_deductions": 0.5009154152620542,
+          "aware_transfers": 0.7188211707544642
+        },
+        {
+          "period": 4,
+          "net_revenue": 11789200321739.078,
+          "gini_disposable": 0.6255648155549944,
+          "benefit_capture_rate": 0.8067961078773488,
+          "evader_share_of_formal": 0.10852448528448534,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.6394482353899965,
+          "aware_deductions": 0.5814034999976238,
+          "aware_transfers": 0.7742252821361638
+        },
+        {
+          "period": 5,
+          "net_revenue": 11789200321739.078,
+          "gini_disposable": 0.6255648155549944,
+          "benefit_capture_rate": 0.8067961078773488,
+          "evader_share_of_formal": 0.10852448528448534,
+          "audit_prob": 0.02,
+          "aware_rebate": 0.7057627220126708,
+          "aware_deductions": 0.6579728733313063,
+          "aware_transfers": 0.8235618873313124
+        }
+      ],
+      "full_information": {
+        "ede_utility_pc": 54278.49239466364,
+        "gini_disposable": 0.6255551870590383,
+        "net_revenue": 11786737970060.469,
+        "benefit_capture_rate": 0.8067961078773488,
+        "sets": [
+          {
+            "id": "rural_landless",
+            "utility_pc": 29038.294621481084
+          },
+          {
+            "id": "rural_marginal_farmers",
+            "utility_pc": 35753.52794085428
+          },
+          {
+            "id": "rural_large_farmers",
+            "utility_pc": 132895.20183816866
+          },
+          {
+            "id": "rural_nonfarm_self",
+            "utility_pc": 47624.88049743279
+          },
+          {
+            "id": "rural_salaried",
+            "utility_pc": 92681.94462628738
+          },
+          {
+            "id": "semi_urban_informal",
+            "utility_pc": 53431.71985174187
+          },
+          {
+            "id": "semi_urban_traders",
+            "utility_pc": 111745.43346913833
+          },
+          {
+            "id": "urban_informal",
+            "utility_pc": 60390.45057788368
+          },
+          {
+            "id": "urban_formal_lower",
+            "utility_pc": 128944.29544110705
+          },
+          {
+            "id": "urban_formal_middle",
+            "utility_pc": 333553.4512065229
+          },
+          {
+            "id": "urban_professionals",
+            "utility_pc": 840017.7818149637
+          },
+          {
+            "id": "top_elite",
+            "utility_pc": 7858409.232100022
+          }
+        ]
+      }
+    }
+  ]
+}

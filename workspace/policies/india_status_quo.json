@@ -1,0 +1,102 @@
+{
+  "id": "india_status_quo",
+  "name": "India status quo (new regime FY2025-26 + GST)",
+  "description": "New income tax regime slabs from Budget 2025 with ₹75,000 standard deduction, rebate up to ₹12 lakh, 4% cess; GST at 0/5/18/40%; farmer support and food subsidy. Verify against current law.",
+  "origin": "baseline",
+  "income_tax": {
+    "enabled": true,
+    "slabs": [
+      {
+        "threshold": 0.0,
+        "rate": 0.0
+      },
+      {
+        "threshold": 400000.0,
+        "rate": 0.05
+      },
+      {
+        "threshold": 800000.0,
+        "rate": 0.1
+      },
+      {
+        "threshold": 1200000.0,
+        "rate": 0.15
+      },
+      {
+        "threshold": 1600000.0,
+        "rate": 0.2
+      },
+      {
+        "threshold": 2000000.0,
+        "rate": 0.25
+      },
+      {
+        "threshold": 2400000.0,
+        "rate": 0.3
+      }
+    ],
+    "standard_deduction": 75000.0,
+    "rebate_threshold": 1200000.0,
+    "rebate_max": 60000.0,
+    "rebate_requires_claim": true,
+    "optional_deduction_cap": 0.0,
+    "exempt_agriculture": true,
+    "cess": 0.04
+  },
+  "consumption_tax": {
+    "enabled": true,
+    "rates": {
+      "exempt": 0.0,
+      "reduced": 0.05,
+      "standard": 0.18,
+      "demerit": 0.4
+    }
+  },
+  "wealth_tax": {
+    "enabled": false,
+    "threshold": 50000000.0,
+    "rate": 0.01
+  },
+  "transfers": [
+    {
+      "id": "farmer_support",
+      "name": "Farmer income support (PM-KISAN style)",
+      "kind": "targeted",
+      "amount_per_household": 6000.0,
+      "target": {
+        "regions": null,
+        "tags_any": [
+          "farmer"
+        ],
+        "max_reported_income": null
+      },
+      "requires_claim": true,
+      "leakage": 0.05,
+      "exclusion_error": 0.15,
+      "inclusion_error": 0.03
+    },
+    {
+      "id": "food_subsidy",
+      "name": "Food subsidy (PDS style, cash value)",
+      "kind": "targeted",
+      "amount_per_household": 9000.0,
+      "target": {
+        "regions": null,
+        "tags_any": [
+          "bpl"
+        ],
+        "max_reported_income": null
+      },
+      "requires_claim": true,
+      "leakage": 0.15,
+      "exclusion_error": 0.2,
+      "inclusion_error": 0.08
+    }
+  ],
+  "enforcement": {
+    "audit_prob": 0.02,
+    "penalty_rate": 2.0,
+    "audit_capacity": null
+  },
+  "outreach": 0.0
+}

@@ -1,0 +1,11 @@
+services:
+  karlab:
+    build: .
+    image: karlab:latest
+    container_name: karlab
+    ports:
+      - "8080:8000"
+    volumes:
+      # economies, policies and runs persist on the host
+      - ./workspace:/app/workspace
+    restart: unless-stopped

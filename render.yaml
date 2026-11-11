@@ -1,0 +1,12 @@
+# Render Blueprint: deploys KarLab as one free web service built from the Dockerfile.
+# Files written while it runs (new economies, policies, runs) are lost on restart;
+# the bundled India economy, policies and demo run come back every time.
+services:
+  - type: web
+    name: karlab
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/meta
+    autoDeploy: true

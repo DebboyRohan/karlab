@@ -1,0 +1,81 @@
+body {
+  font-feature-settings: "tnum" 1;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+  font-family: var(--mantine-font-family-monospace);
+  font-size: 0.86em;
+  white-space: nowrap;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--mantine-color-dimmed);
+}
+
+.nav-brand {
+  font-family: var(--mantine-font-family-headings);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+}
+
+.score-table td,
+.score-table th {
+  white-space: nowrap;
+}
+
+.delta-good {
+  color: var(--mantine-color-teal-7);
+}
+.delta-bad {
+  color: var(--mantine-color-red-7);
+}
+[data-mantine-color-scheme="dark"] .delta-good {
+  color: var(--mantine-color-teal-4);
+}
+[data-mantine-color-scheme="dark"] .delta-bad {
+  color: var(--mantine-color-red-4);
+}
+
+.heat-cell {
+  text-align: right;
+  border-radius: 3px;
+}
+
+/* Docs page */
+.doc-section {
+  scroll-margin-top: 72px;
+  margin-bottom: 48px;
+}
+.doc-body h4 {
+  scroll-margin-top: 72px;
+}
+.doc-body [id^="ref-"] {
+  scroll-margin-top: 72px;
+}
+.doc-eq {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 4px 0 16px;
+}
+.doc-figure {
+  margin: 8px 0 20px;
+  padding: 8px 0;
+  overflow-x: auto;
+}
+.doc-src {
+  font-family: var(--mantine-font-family-monospace);
+  font-size: 0.85em;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: var(--mantine-color-default-hover);
+}
+.doc-toc {
+  position: sticky;
+  top: 72px;
+}

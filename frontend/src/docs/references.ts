@@ -1,0 +1,37 @@
+// Reference list for the Docs page. Each entry's `id` is what <Cite> links to.
+
+export type Reference = { id: string; text: string; url?: string };
+
+export const REFERENCES: Reference[] = [
+  { id: "aitchison1957", text: "Aitchison, J. and Brown, J. A. C. (1957). The Lognormal Distribution, with Special Reference to Its Uses in Economics. Cambridge University Press." },
+  { id: "allingham1972", text: "Allingham, M. G. and Sandmo, A. (1972). Income tax evasion: a theoretical analysis. Journal of Public Economics, 1(3–4), 323–338.", url: "https://doi.org/10.1016/0047-2727(72)90010-2" },
+  { id: "atkinson1970", text: "Atkinson, A. B. (1970). On the measurement of inequality. Journal of Economic Theory, 2(3), 244–263.", url: "https://doi.org/10.1016/0022-0531(70)90039-6" },
+  { id: "atkinson2011", text: "Atkinson, A. B., Piketty, T. and Saez, E. (2011). Top incomes in the long run of history. Journal of Economic Literature, 49(1), 3–71.", url: "https://doi.org/10.1257/jel.49.1.3" },
+  { id: "bass1969", text: "Bass, F. M. (1969). A new product growth for model consumer durables. Management Science, 15(5), 215–227.", url: "https://doi.org/10.1287/mnsc.15.5.215" },
+  { id: "bhargava2015", text: "Bhargava, S. and Manoli, D. (2015). Psychological frictions and the incomplete take-up of social benefits: Evidence from an IRS field experiment. American Economic Review, 105(11), 3489–3529.", url: "https://doi.org/10.1257/aer.20121493" },
+  { id: "chancel2019", text: "Chancel, L. and Piketty, T. (2019). Indian income inequality, 1922–2015: From British Raj to Billionaire Raj? Review of Income and Wealth, 65(S1), S33–S62.", url: "https://doi.org/10.1111/roiw.12439" },
+  { id: "chetty2009", text: "Chetty, R., Looney, A. and Kroft, K. (2009). Salience and taxation: Theory and evidence. American Economic Review, 99(4), 1145–1177.", url: "https://doi.org/10.1257/aer.99.4.1145" },
+  { id: "diamond2011", text: "Diamond, P. and Saez, E. (2011). The case for a progressive tax: From basic research to policy recommendation. Journal of Economic Perspectives, 25(4), 165–190.", url: "https://doi.org/10.1257/jep.25.4.165" },
+  { id: "dreze2015", text: "Drèze, J. and Khera, R. (2015). Understanding leakages in the Public Distribution System. Economic and Political Weekly, 50(7), 39–42.", url: "https://www.epw.in/journal/2015/7/insight/understanding-leakages-public-distribution-system.html" },
+  { id: "feenberg1993", text: "Feenberg, D. and Coutts, E. (1993). An introduction to the TAXSIM model. Journal of Policy Analysis and Management, 12(1), 189–194.", url: "https://doi.org/10.2307/3325474" },
+  { id: "gibrat1931", text: "Gibrat, R. (1931). Les inégalités économiques. Paris: Sirey." },
+  { id: "kakwani1977", text: "Kakwani, N. C. (1977). Measurement of tax progressivity: An international comparison. The Economic Journal, 87(345), 71–80.", url: "https://doi.org/10.2307/2231833" },
+  { id: "kleven2011", text: "Kleven, H. J., Knudsen, M. B., Kreiner, C. T., Pedersen, S. and Saez, E. (2011). Unwilling or unable to cheat? Evidence from a tax audit experiment in Denmark. Econometrica, 79(3), 651–692.", url: "https://doi.org/10.3982/ECTA9113" },
+  { id: "kleven2013", text: "Kleven, H. J. and Waseem, M. (2013). Using notches to uncover optimization frictions and structural elasticities: Theory and evidence from Pakistan. The Quarterly Journal of Economics, 128(2), 669–723.", url: "https://doi.org/10.1093/qje/qjt004" },
+  { id: "liebman2004", text: "Liebman, J. B. and Zeckhauser, R. J. (2004). Schmeduling. Working paper, Harvard University." },
+  { id: "luttmer2014", text: "Luttmer, E. F. P. and Singhal, M. (2014). Tax morale. Journal of Economic Perspectives, 28(4), 149–168.", url: "https://doi.org/10.1257/jep.28.4.149" },
+  { id: "mirrlees1971", text: "Mirrlees, J. A. (1971). An exploration in the theory of optimum income taxation. Review of Economic Studies, 38(2), 175–208.", url: "https://doi.org/10.2307/2296779" },
+  { id: "muralidharan2016", text: "Muralidharan, K., Niehaus, P. and Sukhtankar, S. (2016). Building state capacity: Evidence from biometric smartcards in India. American Economic Review, 106(10), 2895–2929.", url: "https://doi.org/10.1257/aer.20141346" },
+  { id: "nelsen2006", text: "Nelsen, R. B. (2006). An Introduction to Copulas, 2nd ed. New York: Springer.", url: "https://doi.org/10.1007/0-387-28678-0" },
+  { id: "palma2011", text: "Palma, J. G. (2011). Homogeneous middles vs. heterogeneous tails, and the end of the 'inverted-U': It's all about the share of the rich. Development and Change, 42(1), 87–153.", url: "https://doi.org/10.1111/j.1467-7660.2011.01694.x" },
+  { id: "pareto1896", text: "Pareto, V. (1896–1897). Cours d'économie politique professé à l'Université de Lausanne, 2 vols. Lausanne: F. Rouge." },
+  { id: "piketty2013", text: "Piketty, T. and Saez, E. (2013). Optimal labor income taxation. In Handbook of Public Economics, vol. 5, 391–474. Elsevier. Equation numbers cited here follow NBER Working Paper 18521.", url: "https://doi.org/10.1016/B978-0-444-53759-1.00007-8" },
+  { id: "reynolds1977", text: "Reynolds, M. and Smolensky, E. (1977). Public Expenditures, Taxes, and the Distribution of Income: The United States, 1950, 1961, 1970. New York: Academic Press." },
+  { id: "saez2001", text: "Saez, E. (2001). Using elasticities to derive optimal income tax rates. Review of Economic Studies, 68(1), 205–229.", url: "https://doi.org/10.1111/1467-937X.00166" },
+  { id: "saez2010", text: "Saez, E. (2010). Do taxpayers bunch at kink points? American Economic Journal: Economic Policy, 2(3), 180–212.", url: "https://doi.org/10.1257/pol.2.3.180" },
+  { id: "saez2012", text: "Saez, E., Slemrod, J. and Giertz, S. H. (2012). The elasticity of taxable income with respect to marginal tax rates: A critical review. Journal of Economic Literature, 50(1), 3–50.", url: "https://doi.org/10.1257/jel.50.1.3" },
+  { id: "slemrod2007", text: "Slemrod, J. (2007). Cheating ourselves: The economics of tax evasion. Journal of Economic Perspectives, 21(1), 25–48.", url: "https://doi.org/10.1257/jep.21.1.25" },
+  { id: "sutherland2013", text: "Sutherland, H. and Figari, F. (2013). EUROMOD: the European Union tax-benefit microsimulation model. International Journal of Microsimulation, 6(1), 4–26.", url: "https://doi.org/10.34196/ijm.00075" },
+  { id: "theil1967", text: "Theil, H. (1967). Economics and Information Theory. Amsterdam: North-Holland." },
+  { id: "zheng2022", text: "Zheng, S., Trott, A., Srinivasa, S., Parkes, D. C. and Socher, R. (2022). The AI Economist: Taxation policy design via two-level deep multiagent reinforcement learning. Science Advances, 8(18), eabk2607.", url: "https://doi.org/10.1126/sciadv.abk2607" },
+];
